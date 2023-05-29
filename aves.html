@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>AVES</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="./menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+  <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li><a href="#"><span id="span_li_categoria">AVES</span></a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMÍFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul> 
+    </div>
+    <div id="pacote">
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('urutau')"><img src="./img/aves//urutau.webp" alt="urutau"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('coruja')"><img src="./img/aves/coruja.jpg" alt="coruja"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('arara')"><img src="./img/aves/arara azul - extinção.jpg" alt="arara"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('cisne')"><img src="./img/aves/cisne.jpg" alt="cisne"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('aguia')"><img src="./img/aves//aguia.jpg" alt="águia"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('flamingo')"><img src="./img/aves/flamingo.jpg" alt="flamingo"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('tucano')"><img src="./img/aves/tucano.jpg" alt="tucano"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('jacutinga')"><img src="./img/aves/jacutinga.jpg" alt="jacutinga"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('pelicano')"><img src="./img/aves/pelicano.jpg" alt="pelicano"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('periquito')"><img src="./img/aves/periquito.jpg" alt="periquito"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('harpia')"><img src="./img/aves/harpia.jpg" alt="harpia"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('urubu')"><img src="./img/aves/urubu.jpg" alt="urubu"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+            <p class="descricao_animal" id="urutau"><b>O nome <span>urutau</span> é tupi e significa “ave fantasma”.
+            Há uma crendice na Amazônia de que as penas da cauda do urutau protegeriam a castidade. Por isso, a mãe
+            varre debaixo das redes das meninas com uma vassoura confeccionada com estas penas.<br>
+            O urutau possui uma adaptação única em aves, chamada de "olho mágico". São duas fendas na pálpebra superior,
+            as quais permitem que fique imóvel por longos períodos, observando os arredores, mesmo de olhos fechados.<br>
+            Mede entre 33 e 38 centímetros de comprimento e pesam entre 145 e 202 gramas. Apresenta indivíduos com plumagens
+            de colorações distintas, estas plumagens são conhecidas como fase cinza e fase marrom.<br>
+            Adultos na fase cinza apresentam fronte, coroa e nuca com a coloração castanho acinzentada amplamente rajado de
+            castanho-escuro. O dorso é castanho acinzentado, com manchas e estrias marrom escuro. Os ombros são marrom
+            acinzentados com estrias e manchas esbranquiçadas, listras e estrias marrom escuro. Queixo e garganta cinza
+            amarronzado pálido, com listras marrons finas, e limitada por uma listra na lateral da garganta de coloração
+            escura. Peito e flancos castanho acinzentado, salpicado de marrom, com listras finas e manchas castanho
+            escuras.<br>
+            Adultos na fase marrom apresentam o mesmo padrão de cor dos adultos na fase cinza, mas a cor de fundo da
+            plumagem é amarronzada ou mesmo marrom acastanhada. Os imaturo da espécie são semelhante ao adulto, mas
+            apresentam a plumagem mais pálida e mais esbranquiçados.<br>
+            Alimenta-se de insetos noturnos, em especial de grandes mariposas, cupins e besouros, os quais caça em voo.</b></p>
+            
+            <p class="descricao_animal" id="coruja"><b>As <span>corujas</span> são aves, em sua maioria, de hábito noturno,
+            predadoras e que conseguem se deslocar por meio de um voo silencioso. Devido a uma série de mitos que as
+            cercam, as corujas não são bem-vistas por grande parte das pessoas.<br> Existem cerca de 212 espécies de
+            corujas em todo o planeta, sendo observada a ocorrência de 22 espécies no Brasil.<br>
+            As corujas são aves que apresentam algumas características bem típicas, como olhos grandes voltados para a
+            frente, bicos curvos e fortes, garras com unhas afiadas e encurvadas, e plumagem macia.<br>
+            Algumas corujas são pequenas, pesando cerca de 60 gramas, enquanto outras <u><i>podem pesar mais de 1 kg</i></u>.
+            <br>Assim como existe uma grande variação de tamanho, existe uma grande variedade de coloração.<br>
+            De maneira geral, no entanto, elas apresentam penas cinzas, brancas ou marrons, sendo possível observar
+            manchas e listras em algumas espécies.<br>São aves predadoras e estão muito adaptadas à caça em ambientes onde a luminosidade é
+            escassa. Apresentam uma visão muito acurada, e, apesar de enxergarem em locais com pouca luz, não são capazes de enxergar em
+            situações de ausência total de iluminação. Esses animais não conseguem mover os olhos, porém são capazes de girar a cabeça em 270°,
+            o que promove um aumento do seu campo de visão.<br>As corujas apresentam também uma audição bastante desenvolvida, sendo capazes de
+            perceber pequenos sons a uma considerável distância, capacidade essa que as ajuda na captura de presas.<br>
+            As corujas são aves predadoras que se alimentam de diferentes animais. Como elas existem em diferentes partes do mundo, a dieta varia
+            de acordo com a espécie e a região onde vivem. Como exemplos de animais que servem de alimento para corujas, podemos citar roedores,
+            marsupiais, insetos, aves e morcegos. </b></p>
+
+            <p class="descricao_animal" id="arara"><b><span>Arara</span> é um termo que se refere a algumas espécies de aves da família Psittacidae.
+            Nessa família de aves, encontramos espécies grandes e com plumagem com coloração vibrante, o que acaba chamando a atenção do mercado
+            ilegal de animais silvestres. A Psittacidae, infelizmente, <u><i>é a família de aves com o maior número de espécies ameaçadas de extinção.</i></u><br>
+            A <span>arara-azul </span><u><i>(foto)</i></u> é uma espécie de arara que se destaca pela beleza de suas penas azul-cobalto e por seu tamanho,
+            sendo a maior espécie do grupo dos psitacídeos, chegando a atingir mais de um metro de comprimento, medindo-se da ponta do bico à ponta da
+            cauda. Essa espécie habita diferentes formações vegetais, sendo encontrada em formações savânicas e até em ambientes de floresta no Brasil,
+            Paraguai e Bolívia. As maiores populações dessa espécie de arara são encontradas no Pantanal.<br>Um detalhe interessante é que na parte
+            inferior das asas e da longa cauda a coloração não é azul, como no restante do corpo, e sim preta. Na cabeça, é possível perceber um anel de
+            cor amarela ao redor dos olhos. Além disso, a coloração amarela é percebida nas pálpebras e base da boca. O bico desse animal é grande e
+            curvo, dando a impressão de que esse é maior que o próprio crânio.<br>Esses animais são aves sociais, sendo encontradas em pares ou grupos.<br>
+            A arara-azul apresenta um bico bastante resistente, o qual a auxilia na sua alimentação. Esses animais alimentam-se, principalmente,
+            de frutos de palmeiras, tais como buriti, licuri e macaúba.<br> Geralmente, as araras-azuis são observadas alimentando-se sobre o solo e
+            em bandos, diferentemente da maioria das espécies de araras que se alimenta no topo de árvores. A alimentação em grupo é uma forma
+            importante de proteção.<br><u><i>É uma espécie que não se encontra extinta, porém está classificada como vulnerável</i></u> na Lista Vermelha
+            de Espécies Ameaçadas, da União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN).
+            Ainda de acordo com essa lista, <u><i>a população dessa espécie está em decréscimo</i></u>. As principais ameaças contra ela são a
+            destruição de habitat e a captura para comércio ilegal.</b></p>
+
+            <p class="descricao_animal" id="cisne"><b>O <span>cisne</span> é uma ave aquática, pertencente à família Anserinae, que inclui também
+            os gansos. No seu conjunto dão origem ao gênero Cygnus, apresentando como característica marcante, seu longo pescoço.<br>
+            Há diversas espécies de cisnes, sendo que os do hemisfério norte apresentam plumagem branca, enquanto que os do hemisfério sul apresentam,
+            muitas vezes, plumagem colorida; conforme a espécies possuem também bicos diferentes, alguns de coloração vermelha, outras amarela,
+            alguns com uma excrescência carnuda e negra na base, outros sem.<br>Esses animais formam casais monogâmicos e constroem ninhos nas
+            proximidades de regiões úmidas. Cada casal estabelece para si um território, e o defende energicamente de qualquer invasor.<br>
+            Quando chega o inverno, bandos de cisnes deslocam-se para regiões de clima mais ameno. Os jovens costumam acompanhar os pais nessas longas
+            migrações. Como são aves pesadas, precisam de impulso para levantar vôo. Uma “pista” longa é fundamental, pois lhes permite uma decolagem
+            tranqüila.<br>A sua alimentação é na sua maioria à base de vegetais, contudo também se alimenta de plantas da margem e pequenos animais
+            aquáticos. Em adulto é de cor branca. O bico é alaranjado, o pescoço é arqueado e o bico está orientado para baixo. As patas são negras.
+            O seu comprimento total varia entre os 145 e 155 centímetros, com um comprimento de asa de 540 a 622 milímetros, uma envergadura de 216
+            a 236 centímetros. O seu peso varia entre os 10 e 23 quilos.</b></p>
+
+            <p class="descricao_animal" id="aguia"><b>As <span>águias</span> são animais muito admirados por sua beleza e também por suas características
+            imponentes. São consideradas aves de rapina, uma vez que são aves que se alimentam de outros animais e possuem adaptações que
+            favorecem a caça.<br>
+            São aves de grande porte e se destacam por possuírem uma visão aguçada, bico curvo e forte e garras afiadas. Podem se alimentar de
+            diferentes animais a depender da espécie estudada, sendo peixes, anfíbios e pequenos mamíferos animais que podem fazer parte da
+            dieta das águias.<br>Denominamos aves de rapina as aves que se caracterizam por serem carnívoras e apresentarem características que permitem
+            que elas efetivamente consigam capturar a sua presa. Vale destacar que a palavra rapina significa “raptar”, um termo propício para se
+            referir à forma como esses animais capturam suas presas.<br>Algumas características importantes que podem ser destacadas nas aves de rapina
+            e consequentemente nas águias são os lhos voltados para frente, proporcionando uma visão binocular (capacidade de converter em uma única
+            imagem os sinais enviados por cada olho), visão bastante desenvolvida e nítida, o que faz com esses animais sejam capazes de enxergar
+            melhor que os seres humanos, sendo capaz de avistar uma lebre a mais de 3 km de distância. O Bico forte e curvo que permite que o animal
+            seja capaz de matar e cortar a carne de sua presa.<br> As Garras fortes e afiadas que ajudam o animal na captura e também morte da presa.<br>
+            As águias, como salientado anteriormente, são animais carnívoros que se alimentam, portanto, de outros animais. A dieta é variada e
+            depende da espécie que estamos estudando. Dentre os animais que podem fazer parte da dieta das águias estão outras aves, gambás,
+            esquilos, saguis, ratazanas, lagartos, serpentes e tatus. </b></p>
+
+            <p class="descricao_animal" id="flamingo"><b>O <span>flamingo</span> do (grego) phoinikopteros = que possui as asas vermelhas, com as penas
+                das asas vermelhas; e do (latim) ruber = vermelho, rubro.Ave com as penas das asas vermelhas ou (ave) com asas vermelhas.<br>
+                Mede de 102 a 122cm. de comprimento e 90cm. de altura. A fêmea é um pouco menor. As asas são grandes, a cauda é curta, as pernas e o pescoço
+                são longos, as pernas e os pés são vermelhos.<br>Para alimentar-se coloca seu bico na água e a língua segura o alimento desejado. A forma e
+                o tamanho do bico funcionam como uma bomba e ao mesmo tempo um filtro da água que é sugada junto com o alimento.<br>
+                Alimenta-se basicamente de plâncton, algas, insetos, larvas, crustáceos e pequenos moluscos. A coloração avermelhada de suas plumas
+                deve-se à ingestão de alimentos ricos em carotenoides.<br>Habita lagoas salobras rasas sem vegetação, próximas ao mar. Alimenta-se, descansa
+                e se reproduz em grupos de tamanhos variáveis, frequentemente grandes, embora alguns indivíduos vagueiem solitários.
+                 Seu voo é rápido e direto, com batidas firmes de asas, com o pescoço e pernas esticadas. <br>No Brasil, a espécie encontra-se
+                 <u><i>ameaçada de extinção</i></u> na última área em que ainda é encontrada, o estado do Amapá, devido ao estabelecimento de plantações
+                 de arroz na região das lagunas, às salinas ao longo da costa, à caça predatória e à captura de seus ovos.</b></p>
+
+            <p class="descricao_animal" id="tucano"><b><span>Tucano</span> é o nome dado a diferentes espécies de aves que possuem em comum um bico
+             longo e de cores vibrantes. Essas aves fazem parte da família Ramphastidae.<br>As aves dessa família se destacam porque apresentam um bico grande
+            com coloração vibrante. São encontradas ao longo da região neotropical e se alimentam, principalmente, de frutos, mas podem se alimentar
+            também de ovos e filhotes de outras espécies de aves.<br>A família possui 34 espécies, as quais estão incluídas em seis gêneros.
+            As aves da família Ramphastidae são encontradas na região neotropical, desde o México até a Argentina, ocupando hábitats como florestas
+            tropicais, manchas florestais e florestas montanhosas.<br>As aves da família Ramphastidae apresentam como característica mais
+            marcante a presença de um bico colorido e grande. Apesar de ser um bico grande, ele é leve, formado por trabéculas ósseas de aspecto
+            esponjoso. O bico diferenciado desses animais é importante para garantir a colheita de frutos em locais inacessíveis a outras aves.<br>
+            Além do bico grande e colorido, as aves da família Ramphastidae apresentam plumagem vistosa, destacando-se a da região do papo.
+            Os pés dessas aves são zigodáctilos, ou seja, possuem dois dedos voltados para frente e dois voltados para trás.
+            Outra característica marcante é a glândula uropigiana (secretora de uma substância oleosa usada para impermeabilizar a pena) bipartida.</b></p>
+
+            <p class="descricao_animal" id="jacutinga"><b>A <span>jacutinga</span> é uma das aves mais impressionantes da Floresta Atlântica.
+                Espécie pertencente à família Cracidae, caracteriza-se por possuir a plumagem negra brilhante, com manchas brancas
+                 nas asas. Igualmente, as penas do alto da cabeça (píleo) são brancas, além de bastante alongadas e eriçáveis.
+                 <br> Possui a face toda emplumada de negro, com região perioftálmica nua, branco-gesso. Ainda, possui a base
+                 do bico azulada.<br>                
+                A barbela, provida de pouquíssimas penas é vermelha em sua porção posterior, enquanto que a anterior é
+                dividida em uma área lilás superior e outra azul brilhante, inferior. O colorido da barbela torna-se bastante
+                acentuado durante o período reprodutivo, enquanto que fora deste, as cores ficam esmaecidas e mesmo a barbela
+                encolhe.<br><span>Em decorrência da caça, do tráfico de animais selvagens e da inclemente destruição de seu habitat 
+                natural</span>, notadamente a Floresta Atlântica, a espécie desapareceu da maioria dos locais onde era
+                encontrada habitualmente. Atualmente, apesar de admitir-se que a espécie tenha sua distribuição para o Brasil desde o sul da Bahia até o Rio Grande do Sul, é na verdade de ocorrência bastante pontual.
+                <br>Bastante difundida no Brasil atualmente, a manutenção de Cracidae em cativeiro, visando sua reprodução
+                tem se mostrado um sucesso, com várias espécies tendo se reproduzido e algumas, como o mutum-do-sudeste
+                (Crax blumenbachii) só escaparam da extinção em razão de serem alvo de projetos de reprodução em cativeiro.
+                <br><span>Espécie ameaçada de extinção. É muito perseguida, pelo prazer da caça e pelo sabor de sua carne. </span></b></p>
+
+                <p class="descricao_animal" id="pelicano"><b>Os <span>pelicanos</span> são um gênero de grandes aves aquáticas
+                que compõem a família Pelecanidae, a qual é monotípica para autores que desprezam os gêneros Protopelicanus,
+                Miopelecanus e Liptornis, que englobam somente espécies extintas.<br> São caracterizados por um longo bico e
+                uma grande bolsa na garganta, utilizada para capturar presas e drenar a água do conteúdo recolhido antes
+                de engolir. A maioria tem plumagem pálida, porém ocorrem também penas negras, cinzentas, castanhas e róseas.
+                O bico, a bolsa e a pele facial nua adquirem cores vivas na época reprodutiva.<br> As oito espécies de
+                pelicanos vivos têm uma distribuição global irregular, variando latitudinalmente dos trópicos para a zona
+                temperada, embora estejam ausentes do interior da América do Sul e das regiões polares e do oceano aberto.
+                Assim como a maioria das aves aquáticas, possui os dedos unidos por membranas.<br> Os pelicanos são 
+                encontrados em todos os continentes, exceto na Antártida.</b></p>
+
+                <p class="descricao_animal" id="periquito"><b>Os <span>periquitos</span> são aves da família Psittacidae.
+                 Facilmente encontrados no interior da Austrália, os periquitos, em seu ambiente natural, são verde claro.
+                 A imensa variedade de cores de periquitos resulta de mutações ocorridas em cativeiro.Os periquitos não 
+                 ultrapassam os 16 cm de comprimento. O sexo dos periquitos pode ser identificado pela cor da narina
+                 (carúncula). Os machos apresentam, via de regra, a narina azul ou lilás, sendo mais comuns os de cor azul.
+                Já as fêmeas apresentam a narina marrom ou branca, sendo mais comuns as de cor marrom.<br>Sementes, verduras
+                e frutas são à base da alimentação dos periquitos. As principais sementes oferecidas aos periquitos em 
+                cativeiro são: alpiste, aveia e painço. Verduras de cor verde escura (chicória, almeirão, etc.) e frutas
+                 como banana, maça e laranja também fazem parte do cardápio dos periquitos. No entanto, é necessário cuidado,
+                 pois algumas frutas podem fazer mal a essas aves, como o abacate, por exemplo, que pode levar o periquito
+                 à morte. O milho verde, ainda na espiga, e cru, é o alimento preferido dos periquitos.<br>
+                 Na natureza, os periquitos vivem em bandos, o que possibilita a criação dessas aves em viveiros comunitários. 
+                 São extremamente brincalhões, adoram tomar banho, sobretudo no verão. Os periquitos podem viver cerca de 
+                 10 anos. </b></p>
+
+                <p class="descricao_animal" id="harpia"><b>A <span>harpia </span> cientificamente denominada Harpia harpyja, 
+                pertence à classe das aves, particularmente a das carnívoras; ela é igualmente intitulada gavião-real ou
+                uiraçu-verdadeiro. Este animal, encontrado com maior frequência em países como México, Brasil, Argentina,
+                Colômbia, e também na América Central, é uma das de maior porte e peso em todo o Planeta.<br>
+                Esta ave de rapina se alimenta basicamente de bichos pequenos e de tamanho médio, como os mamíferos e outras
+                aves. A extensão de suas asas abertas alcança 2,5 metros e ela pesa até 10 quilogramas. Fisicamente a
+                harpia apresenta olhos diminutos, topete extenso, uma crista adornada com duas penas de maior porte e a
+                parte traseira com três listas de cor cinza.<br>Suas asas são amplas e esféricas, as pernas são encorpadas,
+                mas têm o porte limitado, os dedos são muito possantes, apresentando imensas garras nas extremidades,
+                com as quais estas aves podem erguer até mesmo um animal volumoso do solo. A cabeça é acinzentada, enquanto
+                a papada e a nuca são enegrecidas, e a barriga e a região interna das asas são brancas.<br>Uma característica
+                que distingue esta ave é a presença de uma superfície circular na face, constituída por pequenas penas,
+                a qual é capaz de por em foco ondas de som que podem aprimorar suas virtudes auditivas.<br>
+                Outra propriedade típica dela é seu dom de realizar vôos que lembram os empreendidos pelos acrobatas,
+                em florestas tropicais compactas, nas quais habitam.<br>              
+                Estes animais, que se nutrem de outros seres vivos, são muito velozes e poderosos em seus ataques; assim,
+                podem conduzir facilmente sua caça volumosa ao alto de um arbusto.<br> Eles vivem em média 40 anos e alcançam
+                a fase madura aos seis anos.<br> No Brasil as harpias têm como habitat especialmente a região amazônica,
+                na qual escolhem grandes árvores para morar, no meio da mata cerrada. Aí elas edificam seus ninhos.</b></p>
+
+                <p class="descricao_animal" id="urubu"><b>O <span>urubu</span> é uma ave bastante conhecida por
+                 alimentar-se de organismos em decomposição. Esse animal contribui, portanto, para a limpeza do meio ambiente.<br>
+                 Os urubus são aves de grande porte encontradas, exclusivamente, no continente americano. No Brasil, é
+                possível encontrar cinco espécies desses animais: urubu-de-cabeça-preta (Coragyps atratus),
+                urubu-de-cabeça-vermelha (Cathartes aura), urubu-de-cabeça-amarela (Cathartes burrovianus), urubu-rei
+                (Sarcoramphus papa) e urubu-da-mata (Cathartes melambrotus).<br>Os urubus são aves que possuem olfato e visão
+                bem-desenvolvidos, características que favorecem a busca de alimentos. Vale salientar que o olfato é um dos
+                sentidos menos desenvolvidos nas aves. Os urubus são, portanto, uma exceção.<br>
+                Esses animais destacam-se ainda por serem capazes de realizar voos planados por grandes áreas gastando pouca energia. 
+                <br>esses animais destacam-se pela pouca quantidade ou ausência de penas na região da cabeça e do pescoço.
+                Essa região sem penas está relacionada com a alimentação dessas aves. Como os urubus alimentam-se de carne
+                em decomposição, a cabeça e o pescoço ficam, frequentemente, sujos com os restos desse alimento.
+                Como não há penas na região da cabeça e do pescoço, torna-se mais fácil a limpeza dessa área.<br>
+                Os urubus são animais que não constroem ninhos. Para colocar seus ovos, utilizam fendas em penhascos ou 
+                árvores ocas. Nas grandes cidades, os urubus podem utilizar sacadas de prédios para colocar seus ovos. </b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

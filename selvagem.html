@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>SELVAGENS</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="./menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="#"><span id="span_li_categoria_menu">SELVAGENS</span></a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+  <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMIFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('arara')"><img src="./img/selvagem/arara azul - extinção.jpg" alt="arara"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('aguia')"><img src="./img/selvagem/aguia.jpg" alt="águia"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('harpia')"><img src="./img/selvagem/harpia.jpg" alt="harpia"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('elefante')"><img src="./img/selvagem/elefante comendo grama.jpg" alt="elefante"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('coruja')"><img src="./img/selvagem/coruja.jpg" alt="coruja"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('dragao-de-comodo')"><img src="./img/selvagem/dragao-komodo-lingua.webp" alt="dragao-de-komodo"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('crocodilo')"><img src="./img/selvagem/crocodilo.jpg" alt="crocodilo"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('cobra-royal')"><img src="./img/selvagem/cobra-royal.webp" alt="cobra real"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('lobo')"><img src="./img/selvagem/lobo.jpg" alt="lobo"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('tigre')"><img src="./img/selvagem/tigre.jpg" alt="tigre"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('rinoceronte')"><img src="./img/selvagem/rinoceronte.jpg" alt="rinoceronte"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('hiena')"><img src="./img/selvagem/hiena.jpg" alt="hiena"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+        <p class="descricao_animal" id="arara"><b><span>Arara</span> é um termo que se refere a algumas espécies de aves da família Psittacidae.
+            Nessa família de aves, encontramos espécies grandes e com plumagem com coloração vibrante, o que acaba chamando a atenção do mercado
+            ilegal de animais silvestres. A Psittacidae, infelizmente, <u><i>é a família de aves com o maior número de espécies ameaçadas de extinção.</i></u><br>
+            A <span>arara-azul </span><u><i>(foto)</i></u> é uma espécie de arara que se destaca pela beleza de suas penas azul-cobalto e por seu tamanho,
+            sendo a maior espécie do grupo dos psitacídeos, chegando a atingir mais de um metro de comprimento, medindo-se da ponta do bico à ponta da
+            cauda. Essa espécie habita diferentes formações vegetais, sendo encontrada em formações savânicas e até em ambientes de floresta no Brasil,
+            Paraguai e Bolívia. As maiores populações dessa espécie de arara são encontradas no Pantanal.<br>Um detalhe interessante é que na parte
+            inferior das asas e da longa cauda a coloração não é azul, como no restante do corpo, e sim preta. Na cabeça, é possível perceber um anel de
+            cor amarela ao redor dos olhos. Além disso, a coloração amarela é percebida nas pálpebras e base da boca. O bico desse animal é grande e
+            curvo, dando a impressão de que esse é maior que o próprio crânio.<br>Esses animais são aves sociais, sendo encontradas em pares ou grupos.<br>
+            A arara-azul apresenta um bico bastante resistente, o qual a auxilia na sua alimentação. Esses animais alimentam-se, principalmente,
+            de frutos de palmeiras, tais como buriti, licuri e macaúba.<br> Geralmente, as araras-azuis são observadas alimentando-se sobre o solo e
+            em bandos, diferentemente da maioria das espécies de araras que se alimenta no topo de árvores. A alimentação em grupo é uma forma
+            importante de proteção.<br><u><i>É uma espécie que não se encontra extinta, porém está classificada como vulnerável</i></u> na Lista Vermelha
+            de Espécies Ameaçadas, da União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN).
+            Ainda de acordo com essa lista, <u><i>a população dessa espécie está em decréscimo</i></u>. As principais ameaças contra ela são a
+            destruição de habitat e a captura para comércio ilegal.</b></p>
+
+            <p class="descricao_animal" id="aguia"><b>As <span>águias</span> são animais muito admirados por sua beleza e também por suas características
+                imponentes. São consideradas aves de rapina, uma vez que são aves que se alimentam de outros animais e possuem adaptações que
+                favorecem a caça.<br>
+                São aves de grande porte e se destacam por possuírem uma visão aguçada, bico curvo e forte e garras afiadas. Podem se alimentar de
+                diferentes animais a depender da espécie estudada, sendo peixes, anfíbios e pequenos mamíferos animais que podem fazer parte da
+                dieta das águias.<br>Denominamos aves de rapina as aves que se caracterizam por serem carnívoras e apresentarem características que permitem
+                que elas efetivamente consigam capturar a sua presa. Vale destacar que a palavra rapina significa “raptar”, um termo propício para se
+                referir à forma como esses animais capturam suas presas.<br>Algumas características importantes que podem ser destacadas nas aves de rapina
+                e consequentemente nas águias são os lhos voltados para frente, proporcionando uma visão binocular (capacidade de converter em uma única
+                imagem os sinais enviados por cada olho), visão bastante desenvolvida e nítida, o que faz com esses animais sejam capazes de enxergar
+                melhor que os seres humanos, sendo capaz de avistar uma lebre a mais de 3 km de distância. O Bico forte e curvo que permite que o animal
+                seja capaz de matar e cortar a carne de sua presa.<br> As Garras fortes e afiadas que ajudam o animal na captura e também morte da presa.<br>
+                As águias, como salientado anteriormente, são animais carnívoros que se alimentam, portanto, de outros animais. A dieta é variada e
+                depende da espécie que estamos estudando. Dentre os animais que podem fazer parte da dieta das águias estão outras aves, gambás,
+                esquilos, saguis, ratazanas, lagartos, serpentes e tatus. </b></p>
+
+            <p class="descricao_animal" id="harpia"><b>A <span>harpia </span> cientificamente denominada Harpia harpyja, 
+                pertence à classe das aves, particularmente a das carnívoras; ela é igualmente intitulada gavião-real ou
+                uiraçu-verdadeiro. Este animal, encontrado com maior frequência em países como México, Brasil, Argentina,
+                Colômbia, e também na América Central, é uma das de maior porte e peso em todo o Planeta.<br>
+                Esta ave de rapina se alimenta basicamente de bichos pequenos e de tamanho médio, como os mamíferos e outras
+                aves. A extensão de suas asas abertas alcança 2,5 metros e ela pesa até 10 quilogramas. Fisicamente a
+                harpia apresenta olhos diminutos, topete extenso, uma crista adornada com duas penas de maior porte e a
+                parte traseira com três listas de cor cinza.<br>Suas asas são amplas e esféricas, as pernas são encorpadas,
+                mas têm o porte limitado, os dedos são muito possantes, apresentando imensas garras nas extremidades,
+                com as quais estas aves podem erguer até mesmo um animal volumoso do solo. A cabeça é acinzentada, enquanto
+                a papada e a nuca são enegrecidas, e a barriga e a região interna das asas são brancas.<br>Uma característica
+                que distingue esta ave é a presença de uma superfície circular na face, constituída por pequenas penas,
+                a qual é capaz de por em foco ondas de som que podem aprimorar suas virtudes auditivas.<br>
+                Outra propriedade típica dela é seu dom de realizar vôos que lembram os empreendidos pelos acrobatas,
+                em florestas tropicais compactas, nas quais habitam.<br>              
+                Estes animais, que se nutrem de outros seres vivos, são muito velozes e poderosos em seus ataques; assim,
+                podem conduzir facilmente sua caça volumosa ao alto de um arbusto.<br> Eles vivem em média 40 anos e alcançam
+                a fase madura aos seis anos.<br> No Brasil as harpias têm como habitat especialmente a região amazônica,
+                na qual escolhem grandes árvores para morar, no meio da mata cerrada. Aí elas edificam seus ninhos.</b></p>
+
+            <p class="descricao_animal" id="elefante"><b><span>Elefantes</span> são animais mamíferos encontrados na Ásia e África,
+                que se destacam pelo seu grande porte, sendo considerados os maiores vertebrados terrestres
+                existentes no mundo na atualidade. Algumas características que chamam a atenção são suas longas
+                presas e uma tromba comprida. A tromba do elefante é utilizada para manipular objetos,
+                comunicar-se, levar água e comida até a boca, respirar e cheirar.</b></p>
+
+             <p class="descricao_animal" id="coruja"><b>As <span>corujas</span> são aves, em sua maioria, de hábito noturno,
+                predadoras e que conseguem se deslocar por meio de um voo silencioso. Devido a uma série de mitos que as
+                cercam, as corujas não são bem-vistas por grande parte das pessoas.<br> Existem cerca de 212 espécies de
+                corujas em todo o planeta, sendo observada a ocorrência de 22 espécies no Brasil.<br>
+                As corujas são aves que apresentam algumas características bem típicas, como olhos grandes voltados para a
+                frente, bicos curvos e fortes, garras com unhas afiadas e encurvadas, e plumagem macia.<br>
+                Algumas corujas são pequenas, pesando cerca de 60 gramas, enquanto outras <u><i>podem pesar mais de 1 kg</i></u>.
+                <br>Assim como existe uma grande variação de tamanho, existe uma grande variedade de coloração.<br>
+                De maneira geral, no entanto, elas apresentam penas cinzas, brancas ou marrons, sendo possível observar
+                manchas e listras em algumas espécies.<br>São aves predadoras e estão muito adaptadas à caça em ambientes onde a luminosidade é
+                escassa. Apresentam uma visão muito acurada, e, apesar de enxergarem em locais com pouca luz, não são capazes de enxergar em
+                situações de ausência total de iluminação. Esses animais não conseguem mover os olhos, porém são capazes de girar a cabeça em 270°,
+                o que promove um aumento do seu campo de visão.<br>As corujas apresentam também uma audição bastante desenvolvida, sendo capazes de
+                perceber pequenos sons a uma considerável distância, capacidade essa que as ajuda na captura de presas.<br>
+                As corujas são aves predadoras que se alimentam de diferentes animais. Como elas existem em diferentes partes do mundo, a dieta varia
+                de acordo com a espécie e a região onde vivem. Como exemplos de animais que servem de alimento para corujas, podemos citar roedores,
+                marsupiais, insetos, aves e morcegos. </b></p>
+
+
+            <p class="descricao_animal" id="dragao-de-comodo"><b>O <span>dragão-de-komodo</span> é considerado o maior
+                lagarto do mundo, podendo medir cerca de 3 metros de comprimento. A espécie é encontrada apenas na Indonésia.<br>
+                O dragão-de-komodo é uma espécie de réptil nativa da Indonésia. Esse animal se destaca por ser <span>o maior 
+                lagarto do planeta</span>, possuindo cerca de três metros de comprimento. Esse réptil é um carnívoro que
+                morde sua presa e espera que ela morra em decorrência de seus ferimentos. Por muito tempo, acreditou-se
+                que as presas morriam em decorrência das bactérias presentes na boca do dragão-de-komodo, entretanto, hoje se
+                sabe que sua mordida, em associação com o veneno produzido por esses animais, provoca hemorragias graves.
+                Os machos da espécie podem apresentar cerca de 3 metros de comprimento e pesar mais de 160 kg, além de serem
+                maiores que as fêmeas. Os adultos apresentam cor uniforme, que varia do marrom ao vermelho acinzentado,
+                enquanto os jovens são verdes com faixas pretas e amarelas. Seu corpo é recoberto por escamas ásperas.<br>
+                Esses animais são robustos e apresentam membros e cauda fortes. Suas patas são curtas e possuem garras que
+                ajudam a cortar a carne de suas presas. O focinho é arredondado, e a boca possui dentes afilados e serrilhados.
+                <br>Esse réptil possui língua bifurcada, a qual é usada para sentir o ambiente. A língua é capaz de captar 
+                moléculas de cheiro que são processadas pelo órgão de Jacobson. O olfato do animal é bastante desenvolvido,
+                sendo capaz de farejar uma presa a cerca de 4 km de distância.<br>Os dragões-de-komodo são diurnos e
+                de hábitos solitários. Entretanto, como são animais oportunistas, é comum ver vários dragões-de-komodo
+                reunidos para comer a carcaça de algum animal.São animais terrestres, sendo os jovens essencialmente
+                arbóreos. Viver em cima de árvores evita, por exemplo, que eles sejam mortos por indivíduos mais
+                velhos Quando adultos, cavam tocas nas quais se abrigam. Eles são capazes de nadar e mergulhar.
+                São lagartos ágeis, podendo atingir cerca de 20 km/h em sua locomoção.</b></p>
+
+            <p class="descricao_animal" id="crocodilo"><b>O <span>crocodilo</span> é o nome comum dado aos animais da classe
+                Reptilia, Ordem Crocodylia e família Crocodylidae. Possuem ampla distribuição, ocorrendo nas Américas Central
+                e do Sul, em quase toda a África, na Ásia e na Austrália. Não ocorrem no Brasil. Por serem animais
+                ectotérmicos aquáticos, seu comportamento é adaptado às condições climáticas variadas. Faz seu controle da
+                temperatura corpórea através de trocas de energia com o meio ambiente e sua termorregulação está diretamente 
+                relacionada às atividades de reprodução, alimentação, digestão e crescimento. Diferem-se de seus parentes da
+                família Alligatoridae (Jacarés) por possuírem rosto estreito e cabeça comprida e por deixarem os dentes de
+                cima e de baixo à mostra mesmo com a boca fechada. Essas diferenças morfológicas da cabeça estão relacionadas
+                às suas preferências e estratégias alimentares, pois se alimentam principalmente de peixes.<br>
+                <u><i>Para diferenciar o crocodilo do jacaré</i></u>, dentre as características físicas, podemos
+                citar o <span>focinho, que em crocodilos é mais fino e alongado quando comparado ao dos jacarés</span>,
+                que possuem focinho curto e mais largo.<br>Para diferenciar esses répteis, podemos observar também a
+                mandíbula. Nos crocodilos, é possível observar que o quarto dente do maxilar inferior (um dente maior que
+                os outros) fica visível até mesmo quando o animal está com a boca fechada. Nos jacarés, isso não acontece.
+                Ainda em relação aos dentes, podemos verificar que em crocodilos, eles aparecem alinhados, diferentemente dos
+                jacarés.<br>Existem ainda poros glandulares nas escamas ventrais dos crocodilos, estruturas que
+                não são encontradas nos jacarés. A função desses poros ainda não é bem esclarecida, entretanto,
+                acredita-se que possa existir uma relação entre eles e a troca de calor e água com o ambiente.<br>São
+                encontradas seis espécies de jacaré em território brasileiro, porém não é encontrado nenhum crocodilo.
+                Dentre as espécies brasileiras, podemos citar o jacaré-de-papo- amarelo e o jacaré-açu.<br>
+                Os crocodilos são extremamente adaptados ao ambiente aquático e quando nadam debaixo d'água fecham
+                os ouvidos e as narinas, as pálpebras internas protegem os olhos e a válvula palatal fecha a parte
+                de trás da garganta, permitindo que a respiração aconteça mesmo enquanto a boca contém água e 
+                alimentos. Uma estrutura do coração chamada de Forâme de Panizza realiza a mistura de sangue arterial com 
+                sangue venoso, o que permite longos mergulhos sem respirar. Alguns são capazes de suportar certos níveis de
+                salinidade devido às glândulas dessalinizadoras, permitindo adentrarem em águas salgadas e salobras como
+                mangues ou estuários.</b></p>
+
+            <p class="descricao_animal" id="cobra-royal"><b>A <span>cobra real</span> é uma espécie de serpente peçonhenta
+                da família dos Elapídeos, autóctone da Ásia meridional e do sudeste asiático, que habita as planícies e
+                florestas tropicais da Índia e da China, bem entre outras nações do sudeste asiático.<br>
+                <span>Está ameaçada pela destruição do seu habitat e encontra-se listada como vulnerável na Lista Vermelha da IUCN</span>
+                desde 2010.É a maior cobra peçonhenta conhecida. Cobras-reais adultas normalmente vão de 3 a 4 metros de
+                comprimento, sendo que a maior já registrada chegou a medir 5,85 m.<br>Apesar de contar com o
+                substantivo "cobra" no nome, esta espécie não pertence ao gênero Naja, mas é o único membro do
+                gênero Ophiophagus.É carnívora e a sua dieta consiste basicamente em outros ofídios,
+                venenosos ou não, mas não despreza lagartos, ovos e pequenos mamíferos.O nome científico
+                Ophiophagus significa literalmente <span>"comedora de serpentes"</span>.<br>
+                A coloração da cobra-real varia do marrom ao preto com listras brancas ou amarelas, ou ainda verde-azeitona sem
+                listras. O pescoço possui uma capa que se expande ao se sentir ameaçada.As cobras jovens são pretas brilhantes
+                com faixas amarelas estreitas (podem ser confundidos com um krait com faixas, mas facilmente identificados
+                com seu capuz expansível). A cabeça de uma cobra adulta pode ser bastante compacta e volumosa na aparência,
+                embora, como todas as cobras, possa expandir suas mandíbulas para engolir grandes presas. Sua dentição é 
+                proteroglífica, o que significa que tem duas presas curtas e não retráteis na frente da boca por onde
+                canalizam o veneno para dentro da presa. A expectativa de vida de uma cobra-real é de cerca de 20 anos.<br>
+                Trata-se de uma das espécies de serpente de que mais facilmente se diferenciam os sexos. As
+                cobras-rei são sexualmente dimórficas em tamanho e em cor. Os machos atingem tamanhos maiores que
+                as fêmeas, o que é uma característica incomum entre as cobras cujas fêmeas geralmente são maiores
+                que os machos. Os machos têm cores mais claras à exceção da cauda, que em geral é preta em ambos
+                os sexos.<br>Apesar de ter um veneno de toxidade moderada (com uma toxicidade inferior a da maioria da família
+                dos Elapídeos), a cobra-real possui a capacidade de inocular grandes quantidades por mordida, o que a torna
+                uma das serpentes mais letais. Numa só mordida ela pode libertar até sete mililitros de neurotoxina,
+                suficiente para matar um tigre ou até mesmo um elefante.</b></p>
+
+            <p class="descricao_animal" id="lobo"><b>O <span>lobo </span>É um animal carnívoro pertencente à mesma
+                família dos cães domésticos. O termo lobo geralmente é utilizado para fazer referência ao lobo-cinzento,
+                que apresenta nome científico Canis lupus. Essa espécie de lobo destaca-se por ser uma espécie carnívora e
+                que vive em grupos denominados alcateias. Nas alcateias, de forma geral, apenas um casal é responsável pela
+                reprodução.Apesar da denominação de lobo-cinzento, a coloração do pelo pode variar, sendo alguns indivíduos,
+                por exemplo, completamente brancos. Os lobos são animais relativamente grandes, podendo atingir mais de 1
+                metro no comprimento total do corpo. Vale destacar que outras espécies também são chamadas de lobo, como
+                é o caso do lobo-guará, uma espécie que pode ser encontrada no Brasil.<br>Os lobos-cinzentos são animais
+                relativamente grandes, possuindo o comprimento total do corpo, isto é, da ponta do nariz à ponta da cauda,
+                entre 1 e 1,3 m em machos e entre 0,87 m e 1,17 m em fêmeas. A cauda desses animais varia entre 35 e 52 cm.
+                Geralmente, possuem altura da base das patas ao ombro variando entre 60 e 90 cm.Os machos dessa espécie
+                pesam cerca de 55 kg, enquanto as fêmeas pesam, em média, 45 kg. Ao nascer, os filhotes de lobo-cinzento
+                pesam cerca de 0,5 kg. Outra característica interessante sobre os filhotes de lobo é que eles são surdos
+                e cegos ao nascer, abrindo seus olhos apenas dentro de dez a quinze dias após o nascimento.<br>Os lobos-cinzentos
+                são animais carnívoros, alimentando-se, portanto, de outros animais. Sua dieta geralmente inclui alces,
+                veados, caribus e javalis. Em áreas mais urbanizadas, onde há maior escassez de presas naturais, é comum
+                vê-los alimentando-se de animais domésticos e até mesmo de restos de alimentos do lixo.</b></p>
+
+            <p class="descricao_animal" id="tigre"><b>O <span>tigre </span> é considerado o maior felino do planeta.
+            Trata-se de um animal carnívoro e de um excelente caçador que apresenta grande força e agilidade.<br>É um animal que
+            apresenta hábito solitário e se alimenta, principalmente, de ungulados (animais que possuem casco). Para 
+            capturar suas presas, utiliza a técnica de se aproximar delas sem que seja percebido, movendo-se de maneira 
+            silenciosa.<br>É um animail ágil, forte e que apresenta olfato apurado e boa visão. Destaca-se por ter um
+            padrão de pelagem típico, com pelos laranja-avermelhados e linhas pretas dispostas ao longo de seu corpo.
+            Atualmente, são reconhecidas seis subespécies de tigres viventes.<br>Apresenta pescoço curto e grosso,
+            ombros largos, grandes membros e longas garras. Esse animal possui caninos compridos, sendo o 
+            tigre-de-bengala portador dos maiores caninos de felinos do planeta. O canino de um tigre-de-bengala
+            pode medir entre 7,5 e 10 cm de comprimento. Tigres são animais que apresentam excelente visão, olfato
+            apurado e grande força, características que os tornam excelentes caçadores.</b></p>         
+                       
+
+            <p class="descricao_animal" id="rinoceronte"><b>Os <span>rinocerontes </span>fazem parte da ordem Perissodactyla
+            (mamíferos de dedos ímpares) e da família Rhinocerotidae. Estão divididos em 4 gêneros e 5 espécies:
+            Ceratotherium simum, Dicerorhinus sumatrensis, Diceros bicornis, Rhinoceros sondaicus e Rhinoceros unicornis.
+            <br>Eles habitam desde savanas a florestas mais densas. São animais que possuem um ou dois cornos, estrutura de
+            origem dérmica, composta por pelos queratinosos compactados. Possuem três dedos e uma pele grossa cheia de 
+            pregas, os dentes caninos e incisivos são vestigiais, exceto nos asiáticos. As fêmeas reproduzem a cada 2 anos,
+            a gestação dura de 420 a 570 dias e seu único filhote permanece com ela até sua próxima gestação. Elas atingem
+            a maturidade sexual entre 4 e 6 anos e os machos entre 7 e 10 anos e a expectativa de vida pode chegar aos 50
+            anos.<br>São animais herbívoros, na África alimentam-se mais de pastagem, enquanto na Ásia buscam folhas nas
+            árvores. Possuem hábitos mais noturnos, descansando ao longo do dia. Apesar de pesados podem atingir 
+            grandes velocidades em pequenas distâncias e acabam abrindo trilhas por onde passam. Gostam de tomar banho
+            de lama, usada como repelente de insetos e os machos são solitários e territorialistas, marcando seu
+            território com urina e uma pilha de fezes. Durante a estadia reprodutiva os casais podem permanecer até 4
+            meses juntos.</b></p>
+
+            <p class="descricao_animal" id="hiena"><b>A <span>hiena </span>é um mamífero carnívoro que se alimenta de restos
+            de animais, animais em decomposição e caça de outros carnívoros. São encontrados nas regiões de savana no
+            Centro e no Sul da África e alguns países da Ásia. Pertencem a família Hyaenidae que já chegou a ser formada
+            por 24 espécies diferentes e atualmente é formada por poucas espécies de hienas.<br>
+            A hiena é um caçador de hábitos noturnos que vive em grupos estáveis, chamados de clãs, formados por fêmeas
+            residentes que também lideram o grupo, seus filhotes e machos imigrantes que surgem e ficam por um tempo ou
+            na época do acasalamento. Geralmente os filhotes machos que nascem no clã vão embora do grupo ao entrar na
+            puberdade, por volta dos 2 anos de idade, e as fêmeas permanecem no grupo de origem e recebem de suas
+            genitoras a sua classificação social no grupo.<br>As hienas fêmeas são mais agressivas que os machos e também
+            mais pesadas. Em um mesmo clã as fêmeas dominam os machos durante a alimentação, a caça e na maioria das
+            situações sociais no grupo. A demarcação de território é realizada tanto pelo macho quanto pela fêmea, em
+            ambos os casos eles defecam e arranham o solo e através da liberação de uma quantidade de secreção que saem
+            pelas glândulas anais e deixam um forte odor em plantas no meio ambiente.<br>As principais características
+            externas notadas no animal são: pode chegar a medir mais de 1,5 metro contando com a cauda, pesar em torno 
+            de 70-80 kg, o corpo é recoberto por pelos curtos ou longos dependendo da espécie, sua pelagem varia entre
+            tons de castanho-claro e castanho-escuro, as orelhas geralmente são arredondadas, mas algumas espécies
+            apresentam orelhas pontiagudas. As patas traseiras são mais curtas que as frontais o que promovem um
+            deslocamento único no animal, assemelhando a um mancar. </b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

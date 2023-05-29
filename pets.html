@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>PETS</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="./menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#"><span id="span_li_categoria_menu">PETS</span></a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+  <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMIFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('cachorro')"><img src="./img/pets/cachorro.jpg" alt="cachorro"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('gato')"><img src="./img/pets/gato.jpg" alt="gato"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('coelho')"><img src="./img/pets/coelho.jpg" alt="coelho"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('galinha')"><img src="./img/pets/galinha.jpg" alt="galinha"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('porquinho-da-india')"><img src="./img/pets/porquinho da india.jpg" alt="porquinho da india"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('camundongo')"><img src="./img/pets/camundongo.jpg" alt="camundongo"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('peixe-dourado')"><img src="./img/pets/peixe-dourado.jpg" alt="peixe dourado"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('periquito-australiano')"><img src="./img/pets/periquito australiano.jpg" alt="periquito australiano"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('manon')"><img src="./img/pets/manon.jpg" alt="manon"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('bavete-de-cauda-curta')"><img src="./img/pets/bavete-de-cauda-curta.jpg" alt="bateve de cauda curta"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('star-finch')"><img src="./img/pets/Star-Finch.jpg" alt="star finch"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('calafate')"><img src="./img/pets/calafate.jpg" alt="calafate"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+        <p class="descricao_animal" id="cachorro"><b>O <span>cachorro</span> doméstico é provavelmente o animal de estimação mais popular do mundo.<br>
+            O cachorro é um mamífero quadrúpede (ou seja, anda sobre quatro patas) que se destaca por ter uma cauda e uma
+            cobertura de pelos por todo o seu corpo. Entretanto, hoje em dia, graças às diversas raças caninas existentes,
+            encontramos cães de todos os tamanhos, formas e cores.<br> Por exemplo, em termos de dimensões, <u><i>o menor cão,
+            o Chihuahua, mede entre 15 e 25 cm de altura</i></u> até a cernelha (ponto mais alto do ombro de um cachorro),
+            enquanto <u><i>a maior raça de cachorro do mundo, o Dogue Alemão, tem uma altura mínima de 80 cm até a cernelha.</i></u>
+            A morfologia também é muito variável entre as características de um cachorro. Assim, encontramos cães com um
+            focinho muito longo e outros com um focinho plano, os chamados cães braquicefálicos. Outro aspecto muito
+            significativo da espécie é a cauda, que pode ser longa ou curta, na verdade, há até mesmo raças que nascem
+            sem ela. A cauda é composta por um número variável de vértebras, e pode ter mais ou menos pêlos. As orelhas,
+            dotadas de 18 músculos, são muito flexíveis e expressivas. Também não podemos deixar de falar da pelagem,
+            que pode ser de todos os tipos de cores e padrões, bem como macia, áspera ou até dupla.</b></p>
+
+            <p class="descricao_animal" id="gato"><b>O <span>gato</span>  (felis catus) é um mamífero carnívoro e quadrúpede pertencente
+                à família Felidae e à ordem carnívora.<br> É um animal doméstico apreciado por caçar ratos e ratazanas.<br>
+                Este animal possui unhas retráteis, ouvidos e olfação bem aguçados, uma notável visão noturna e um corpo flexível,
+                musculoso e compacto.<br> Trata-se de um animal com boa memória e com capacidade de aprender por meio da
+                observação e da experiência.<br> Existem aproximadamente 70 espécies de gatos conhecidas. As maiores diferenças
+                são o comprimento da cauda e o aspecto geral, visto que variam menos do que as raças de cães.<br>
+                As raças menores variam de 2 a 3 kg e as maiores de 7 a 9 kg. Até hoje, as tentativas de criar raças
+                muito pequenas ou muito grandes fracassaram.</b></p>
+
+            <p class="descricao_animal" id="coelho"><b>O <span>coelho</span> é um mamífero cujo corpo é coberto por uma pelagem
+                densa e parecida com lã. Sua cabeça é ovalada e seus olhos grandes. <br>
+                Seu peso varia entre 1,5 e 2,5 kg, suas orelhas podem medir até 7 cm e sua cauda é bem curta.
+                As patas posteriores são maiores do que as anteriores.
+                O comprimento do coelho oscila entre 33 e 50 cm.</b></p>
+
+            <p class="descricao_animal" id="galinha"><b>As <span>galinhas </span> são animais muito presentes em nosso
+            território, principalmente porque é extremamente comum criar galinhas até mesmo nos quintais ao longo de
+            todo o Brasil, tanto por causa de seus ovos quanto por causa de sua carne.<br>Você com certeza já viu uma
+            galinha, mesmo que apenas por foto. Por isso, algumas características físicas já vêm a nossa mente de maneira
+            simples e sem muito esforço. Porém, sempre existem outras características que acabamos deixando passar 
+            despercebidas, como veremos agora.As galinhas são animais com bicos curtos – assim como suas asas, pernas
+            cheias de escamas e cristas com bastante carne em sua composição. Elas podem possuir várias colorações
+            diferentes, o que irá variar de espécie para espécie.<br>Além de tudo isso, o corpo da galinha é coberto por
+            diversas penas, sendo que o seu pé possui 3 dedos que são utilizados como ganchos para que ela consiga se
+            apoiar facilmente.Portanto, a galinha é um animal de porte pequeno simples de ser domesticada e com
+            características físicas típicas das aves, como as asas por exemplo.<br>
+            Por incrível que pareça e apesar de muitas pessoas não saberem, <span>a galinha é o animal doméstico que 
+            existe em maior quantidade no mundo</span>, o que explica sua grande popularidade no mundo e o seu baixo
+            preço no mercado quando comparamos o frango com outras carnes.<br>Uma coisa muito interessante é que
+            em alguns continentes, como a África, 90% das casas possuem criação de galinha! </b></p>
+
+            <p class="descricao_animal" id="porquinho-da-india"><b>O <span>porquinho da india </span>é um animal dócil,
+            tímido, mas muito carinhoso. Por isso, esse roedor é um ótimo pet para pessoas que não possuem tanto espaço
+            em casa ou querem um bicho bem pequeno para fazer companhia.<br>Por mais que seu nome seja porquinho, esse
+            pequeno pet não é da família dos suínos. Na verdade, ele é um roedor da família Caviidae. Além disso, também
+            se engana quem pensa que ele veio do país da Ásia Meridional – na verdade, esse animal é sul-americano.<br>
+            O porquinho de estimação é originário dos Andes, na América do Sul. Ele descende de uma espécie de preá, que
+            era usado na alimentação de povos indígenas. Com o tempo, no entanto, esse animal saiu do cardápio dos
+            andinos e foi para os lares de todo o mundo, por seu temperamento amigável e os cuidados fáceis.<br>
+            Parentes próximos de roedores como a capivara e o preá, os porquinhos-da-Índia podem medir entre 20 e 
+            25 centímetros e pesam cerca de 1kg.  Com um corpo arredondado e compacto, esses bichinhos têm pequenas
+            orelhas arredondadas.As suas cores variam de acordo com a raça e por causa do processo de domesticação
+            do pet. A grande variedade de tonalidade acontece pela quantidade de cruzamento que ocorrem na espécie.
+            Então, você pode encontrar por aí porquinho-da-Índia nas cores: brancos, pretos, marrons, albinos, bicolores,
+            amarelados, entre outros tons.</b></p>
+
+
+            <p class="descricao_animal" id="camundongo"><b>Os <span>camundongos </span>são animais que pertencem à espécie
+             Mus Musculus, que não é a mesma dos ratos e ratazanas. Apesar de serem encontrados em todas as partes do
+             mundo, esse animal é originário da Ásia e da Europa.<br>Na parte física, o camundongo de estimação pode
+            chegar a medir até 10cm de comprimento, contando também a extensão de sua cauda. Quanto ao porte, esse
+            delicado pet pode pesar, no máximo, 20g.              
+            <br>Para quem deseja adotar e transformar o camundongo em seu animal de estimação, vale lembrar que a
+            expectativa de vida dele é curta, chegando a até 3 anos de idade. Por isso, vale a pena pensar bem antes de
+            incluir o pet na família.Os ratos domésticos, como o camundongo de estimação, são criados em cativeiro e livres
+            de doenças. Os animais que transmitem doenças são ratos criados em ambientes não controlados como,
+            por exemplo, as ruas, onde não é possível evitar o contato com outros animais transmissores de doenças.<br>
+            Os camundongos se dão muito bem com pessoas e outros animais. Inclusive, é indicado deixar um companheiro para o
+            seu pet se divertir, mas evite casais. Isso porque eles se reproduzem muito rapidamente.Apesar disso, podem 
+            ser um pouco territorialistas, mas isso varia muito de um indivíduo para o outro.</b></p>
+
+            <p class="descricao_animal" id="peixe-dourado"><b>O <span>peixe dourado </span>é popularmente conhecido como
+            Pirajuba ou Piraju. O peixe-dourado habita em águas doces e corredeiras, como em cachoeiras, e costuma sempre
+            nadar em cardumes. Sua espécie se encontra nas Bacias do Paraná, de São Francisco, do Rio Doce e da Paraíba 
+            do Sul.Esse é um peixe de escamas, que possui uma coloração dourada por todo o corpo, com reflexos avermelhados.
+            Eles têm uma cabeça relativamente grande, com uma boca repleta de dentes caninos que alcança a metade da
+            cabeça. Eles podem atingir cerca de 25 kg e alcançar 1 m de comprimento.<br>o peixe-dourado ideal para se ter em
+            casa é o Kinguio ou Peixinho-dourado. Estes, além de apresentarem um porte pequeno, são capazes de se adaptar
+            muito bem à vida de pet.Entretanto, o cuidado mais recomendado em relação ao peixinho-dourado é que o
+            tutor limpe o aquário regularmente. Isso porque esse pet tende a defecar com maior frequência durante o
+            dia, o que eleva os níveis de amônia na água e pode levá-lo a óbito. Portanto, se você pretende ter um 
+            peixe dessa espécie em casa, é muito importante manter o habitat dele sempre em ordem.   </b></p>
+
+            <p class="descricao_animal" id="periquito-australiano"><b>Os <span>periquitos australianos </span>é considerado
+             um animal doméstico, devido aos estudos sobre a espécie e à seleção de animais específicos para domicílio.<br>
+            <span>A criação é liberada pelo IBAMA </span>(Instituto Brasileiro de Animais e Meio Ambiente). Então, ele pode
+            ser mantido livremente em casa, assim como os canários e as calopsitas. Esse é um pássaro de fácil adaptação,
+            com personalidade dócil e amigável. Se for bem-cuidado, ele pode te acompanhar por mais de dez anos.<br>
+            Apesar de ser pequeno, o passarinho australiano apresenta cerca de 18 cm de comprimento e se destaca
+            pela enorme presença. O corpo colorido e o canto melódico preenchem o ambiente de alegria. Uma das
+            características mais interessantes é que ele adora cantarolar diariamente.Para entender tudo sobre o
+            periquito-australiano, é importante saber que o repertório musical do pet pode ser ampliado. A ave é 
+            inteligente e consegue aprender mais de um tipo de melodia.A música está diretamente ligada ao
+            bem-estar do periquito-australiano. Então, quando o pássaro canta é sinal de que ele está bem.
+            Quanto mais saudável ele for, mais melodias você vai ter no seu dia a dia. Geralmente, os machos
+            cantam mais do que as fêmeas. É possível perceber isso ao ter um casal.</b></p>
+
+            <p class="descricao_animal" id="manon"><b>O <span>manon </span>é um pássaro que pertence à Ordem dos
+            Passeriformes, ou seja, seu bico é reto, fino e pequeno. Conhecido por suas belas cores e tamanho compacto,
+            ele é um dos animais mais adorados pelos criadores de aves. Venha com a gente e saiba mais sobre ele.<br>
+            O pássaro Manon são animais tão delicados que costumam medir, na vida adulta, entre 10 e 11cm de
+            comprimento e ter o peso corporal por volta de 10g. Por outro lado, ele pode ser considerado um animal
+            longevo, já que a sua expectativa de vida é de 5 à 10 anos.Porém, o charme dessa espécie de pássaro
+            fica por conta da variedade de cores. As principais variações são o Negro-marrom, Moka e o Canela.
+            Ainda que raro, é possível encontrar o Manon com pelos nas cores arlequim, branco e albino.A coloração
+            mais comum, o Negro-marrom, o pássaro se apresenta com a parte frontal do corpo em negro
+            (asas, peito e face). Já a cor marrom fica na cabeça e na parte de cima do dorso do animal.<br>
+            A alimentação do Manon é baseada em sementes para aves exóticas, tais como alpiste, painço e senha. Existem 
+            rações e misturas de sementes prontas para exóticos que facilitam o manejo e são de boa qualidade.Além de
+            ração extrusada e mix de sementes, os tutores podem oferecer alguns petiscos complementares à dieta dos
+            pássaros, como:frutas, legumes e verduras, de maneira sempre controlada e sem exageros.<span>Sua criação é autorizada pelo IBAMA</span></b></p>
+
+            <p class="descricao_animal" id="bavete-de-cauda-curta"><b>O <span>bavete de cauda curta </span>possui  o nome
+            científico de Poephila Acuticauda. Ele pertence a família Estrildidae e em inglês é chamado de Long-tailed
+            finch.Também conhecido como Tentilhão-das-ervas-de-cauda-longa, diamante-bavete ou Babete-de-cauda-longa.
+            Ele ganhou este nome devido ao “babador” que eles possuem logo abaixo do bico, cujo significado em francês
+            é bavette.<br>Os pássaros desta espécie são calmos, sociáveis e vivem em grandes bandos. Assim como o
+            canário-belga, apenas os machos cantam. Essa é a forma mais simples de diferenciar os machos das fêmeas.
+            Quando adultos chegam a medir de 10 a 15 centímetros. Eles ficam com o corpo amarelado, asas castanho claro,
+            cabeça azul claro, papo preto, formando o babador típico, e bico vermelho.Outra característica marcante é a
+            cauda mais comprida, que é formada por dois filetes de penas.<br>O bavete-de-cauda-longa é um pássaro granívoro.
+            Uma boa alimentação é composta principalmente por uma mistura de sementes a base de alpiste e painço.
+            Eles também aceitam bem algumas verduras e legumes, o que é importante para uma boa nutrição dos pássaros.
+            Muitos criadores também oferecem ração extrusada para seus bavetes.<span>Sua criação é autorizada pelo IBAMA</span></b></p>
+
+            <p class="descricao_animal" id="star-finch"><b>O <span>star finch </span>é um pequeno tentilhão estrildido
+            encontrado em campos secos e habitats de savana nas partes mais setentrionais da Austrália. Eles são comumente
+            mantidos como uma ave de aviário e têm a reputação de serem fáceis de cuidar e reproduzir. Numerosas mutações
+            foram estabelecidas, incluindo fulvo, canela e corpo amarelo.Apesar de exótico, sua criação<span>é autorizada pelo IBAMA</span> </b></p>
+
+            <p class="descricao_animal" id="calafate"><b>O  <span>calafate </span> é uma ave tranquila e independente, além 
+            de ser muito popular por não exigir muita atenção de seus tutores. Assim sendo, esse pássaro é indicado
+            principalmente para pessoas muito jovens ou muito idosas, ou para donos em geral que passam bastante tempo
+            fora de casa.O calafate é também conhecido como Pardal de Java (uma das ilhas da qual se origina) ou Pada.
+            O seu nome científico Lonchura oryzivora significa “comedor de arroz”. Isso porque, na região em que se
+            originou, seus bandos costumam atacar plantações de arroz.<br>Calafate é uma ave bonita, tranquila e independente
+            que é originária das ilhas de Bornéo, Sumatra e Java, que são ilhas indonésias. Assim sendo, essa ave recebeu 
+            seu nome popular de acordo com os profissionais calfat, que eram responsáveis pela vedação dos cascos das
+            embarcações.Isso se deve ao fato de que a ave calafate, quando constrói o seu ninho, o veda completamente como 
+            uma bola oca onde nem mesmo a luz atravessa, deixando somente uma pequena entrada. Dessa forma, o ninho do
+            calafate é semelhante a uma caverna.É uma ave ideal para ser criada por pessoas que morem sozinhas e não
+            disponham de muito tempo para dar atenção aos animais. Por analogia, esses pássaros convivem muito bem entre
+            si mesmos, mas podem não se sentir muito à vontade na relação com humanos.</b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

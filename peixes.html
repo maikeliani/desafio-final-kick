@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>PEIXES</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="./menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                   
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+  <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMÍFEROS</a></li>
+            <li><a href="#"><span id="span_li_categoria">PEIXES</span></a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('diabo-negro')"><img src="./img/peixes/peixe-diabo-negro.webp" alt="diabo-negro"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('peixe-palhaco')"><img src="./img/peixes/peixe-palhaco.webp" alt="peixe-palhaço"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('tilapia')"><img src="./img/peixes/tilapia.jpg" alt="tilápia"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('peixe-espada')"><img src="./img/peixes/peixe-espada.jpg" alt="peixe espada"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('porquinho')"><img src="./img/peixes/porquinho.jpg" alt="porquinho"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('arraia')"><img src="./img/peixes/arraia.jpg" alt="arraia"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('atum')"><img src="./img/peixes/atum.jpeg" alt="atum"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('tubarao')"><img src="./img/peixes/tubarao.jpg" alt="tubarao"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('cavalo-marinho')"><img src="./img/peixes/cavalo-marinho.jpg" alt="cavalo-marinho"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('acara-bandeira')"><img src="./img/peixes/acara-bandeira.jpg" alt="acará bandeira"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('aruana-dourado')"><img src="./img/peixes/aruana-dourado.jpg" alt="aruanã dourado"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('Piramboia')"><img src="./img/peixes/peixe-cobra.jpg" alt="Piramboia"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+            <p class="descricao_animal" id="diabo-negro"><b>O <span>diabo-negro</span> é uma espécie de tamboril conhecido por sua aparência peculiar e sua forma característica de capturar presas.<br>
+            O peixe diabo-negro é comumente conhecido como tamboril abissal ou pelo nome científico Melanocetus 
+            johnsonii. Pertence à família Melanocetidae, presente em diferentes áreas dos trópicos.Da mesma forma,
+            eles fazem parte da ordem Lophiiformes, que contém representantes do tamboril. Esses peixes estão
+            presentes no registro fóssil desde a época Eoceno, pertencentes à Era Cenozoica.<br>
+            Esta espécie caracteriza-se por viver na região abissal do oceano, a profundidades de 3 mil ou 4 mil metros.
+            Eles ficam facilmente camuflados nesta área graças à sua cor marrom escuro ou vermelho escuro.Observa-se um 
+            acentuado dimorfismo sexual entre machos e fêmeas, o que é impressionante. Em primeiro lugar, as fêmeas têm
+            um tamanho corporal maior que os machos.<br>Elas podem atingir até um metro de comprimento e cerca de 30 kg
+            de peso. Por outro lado, o comprimento dos machos é um décimo em relação ao da fêmea, podendo chegar a cerca
+            de 3 cm no máximo.Esses peixes têm dois olhos pequenos que perdem proeminência diante da protuberância
+            que brota do nariz das fêmeas. Essa saliência ou “vara de pescar” termina em uma isca cheia de bactérias
+            bioluminescentes, com as quais chamam a atenção. </b></p>
+
+            <p class="descricao_animal" id="peixe-palhaco"><b>O <span>peixe palhaço</span> é um peixe de água
+            salgada da família Pomacentridae conhecido popularmente de peixe-anêmona, porque vivem entre
+            anêmonas-do-mar.Além disso, o seu habitat incomum e as cores chamativas os transformaram em populares
+            peixes de aquário.Esta peixe marinho pertencente ao gênero Amphiprion e a sua principal característica
+            é a coloração brilhante de seu corpo, que pode ser laranja, vermelho, amarelo, rosa ou preto.          
+            <br>O peixe palhaço estabelece uma relação simbiótica com a anêmona, beneficiando-se da proteção oferecida
+            por seus tentáculos.<br>O peixe palhaço possui o corpo laranja, circundado por três faixas largas e brancas.
+            As faixas brancas e as barbatanas têm contorno preto, que é mais espesso no peixe-palhaço verdadeiro.Além
+            disso, este peixe também tem a cabeça curta, boca pequena, dentes pouco desenvolvidos. Ele passa todo o 
+            tempo perto das anêmonas do mar e geralmente confundidos com flores.<br>A reprodução deste peixe é
+            através de desova este período ocorre na lua cheia e as espécies podem colocar milhares de ovos.Além disso,
+            o macho  é responsável por guardar os ovos até que eles venham eclodir entre 6 e 10 dias.</b></p>
+
+            <p class="descricao_animal" id="tilapia"><b>As <span>tilápias </span> são peixes de água doce, a qual 
+            foram descritas mais de 80 espécies distribuídas em três gêneros: Tilapia, Sarotherodon e Oreochromis.<br>
+            Oreochromis é o gênero mais explorado pelas práticas de psicultura. Ele é formado por cerca de 32 espécies que
+            tiveram sua origem na África, entretanto, algumas dessas foram introduzidas na maioria dos países tropicais
+            e subtropicais visando a exploração econômica.<br>Pelo fato de existir uma série de espécies adaptadas em
+            diferentes regiões, é de se esperar que as tilápias apresentem um amplo hábito alimentar, assim, temos
+            espécies herbívoras (comem plantas), fitoplanctófagas (comem algas), omnívoras (comem alimentos de origem 
+            vegetal, animal e outros) e detritívoras (comem restos de organismos).<br>As espécies cultivadas no Brasil,
+            são majoritariamente fitoplanctófagas, entretanto, elas apresentam uma ampla adaptabilidade alimentar,
+            podendo comer rações e outros subprodutos.<br>As tilápias apresentam dimorfismo sexual, ou seja, 
+            possuem diferenças estruturais significativas entre machos e fêmeas.<br>De modo geral, as tilápias apresentam 
+            um corpo formado por escamas, possuem um longo intestino e apresentam dentes nos lábios. Sua respiração é 
+            do tipo branquial (através das brânquias), vivendo bem em locais com temperaturas entre 26°C e 28°C.<br>
+            Com relação a reprodução, ela pode acontecer até 12x ao ano, as quais em todas são colocados de 800 a 2000
+            óvulos que estarão disponíveis para serem fecundados pelos machos. Para isso, é necessário que os peixes
+            tenham atingindo sua maturidade sexual, que é algo que acontece a partir de 4 a 5 meses de vida.</b></p>
+
+            <p class="descricao_animal" id="peixe-espada"><b>O <span>peixe-espada</span> é um peixe teleósteo, periforme,
+            da família dos Trichiuridaes, das regiões tropicais e temperadas dos oceanos.<br>
+            O peixe espada tem este nome por ser longo, prateado e fino; semelhante com uma espada. Além disso, 
+            ele também conhecido como Peixe-Fita, Catana, Guaravira e Embira.Seu nome científico é Trichirus 
+            lepturus e pertence a família dos Trichiuridaes da ordem dos Perciformes.<br>O peixe-espada tem corpo
+            longo e comprimido em forma de espada e a sua coloração é uniforme prateada com reflexos azulados, e 
+            o dorso mais escuro, a sua boca é grande e pontuda possui dentes caninos com algumas presas grandes
+            na região frontal.Além disso, este peixe chega a atingir até 3,5 m de comprimento com o peso de
+            2,8 kg, ele também possui grande quantidade de gordura ômega-3.</b></p>
+
+            <p class="descricao_animal" id="porquinho"><b>O <span>porquinho</span> é um piexe nativo da bacia amazônica, hoje
+            ele é encontrado também na bacia do Rio Paraná (onde foi introduzido). Alimenta-se de outros peixes, insetos e
+            invertebrados aquáticos. Onívoro, também consome sementes, frutos e algas.Apresenta desova parcelada, com a
+            incubação dos ovos na boca e o cuidado com a prole. A maturação sexual ocorre quando o indivíduo atinge 12 centímetros.
+            <br>Chega a medir 30 centímetros de comprimento. Essa espécie apresenta dimorfismo sexual. Os machos são 
+            maiores e mais coloridos que as fêmeas. Além disso, o peixe-porquinho tem corpo elevado, cabeça com perfil
+            triangular e lóbulo branquial bem desenvolvido na altura do primeiro arco branquial. As bases das nadadeiras
+            dorsal e anal são escamadas. Já a caudal tem borda reta e listras alaranjadas. A coloração da cabeça é
+             cinza-escura e a na altura dos espinhos da nadadeira dorsal há uma mancha escura.</b></p>
+
+            <p class="descricao_animal" id="arraia"><b>As <span>arraias</span> são peixes pertencentes ao Reino Animalia, ao Filo Chordata,
+             a Classe Chondrichthyes, a subclasse Elasmobranchii, a Superordem Batoidea e a Ordem Myliobatiformes ou
+            Rajiforme, podendo ser marinha ou de água doce.
+            <br>Grande parte das arraias são bentônicas e carnívoras. Em todo mundo são descritas mais de 400 espécie
+            com tamanho variando de 0,15 a 7 metros de envergadura.Em geral, a maioria das arraias possuem formato de
+            disco, com a cauda fina e comprida provida ou não de um ou mais ferrões venenosos, que podem causar ferimentos
+            dolorosos.<br>As nadadeiras peitorais são bem desenvolvidas e situam-se no mesmo plano da cabeça,
+            projetando-se pelos lados da cabeça. A ondulação das nadadeiras constitui-se na principal forma de
+            locomoção das arraias.Na parte inferior encontra-se a boca, pequena e transversa com dentes
+            serrilhados. Essas características permitem que as arraias se alimentem de plâncton, moluscos, 
+            crustáceos e outros pequenos animais.<br>Na parte superior encontram-se os olhos e os espiráculos,
+            fendas posicionadas atrás de cada olho, conectados à câmara branquial e fundamentais no processo
+            respiratório.  </b></p>
+
+            <p class="descricao_animal" id="atum"><b>O <span>atum</span> possui um corpo alongado, fusiforme, e uma grande
+            boca alongada. Suas barbatanas dorsais são bem separadas, ajustáveis a um sulco no dorso, enquanto que a
+            caudal bifurcada ostenta duas quilhas de queratina. O dorso deste peixe possui uma coloração azul escuro,
+            enquanto que no ventre e nos flancos o prata predomina.Membro da família Scombridae e do gênero Thunnus,
+            este ilustre membro dos da ordem dos Perciformes sistema vascular, especializado em troca de calor,
+            pode elevar a temperatura corporal do atum entre 10º e 15º acima da temperatura ambiente, o que o torna
+            um peixe endotérmico e lhe confere a habilidade de um grande nadador, migrando ao longo de um oceano e 
+            atingir uma distância de até 170 km num único dia. Esse mesmo sistema vascular dá um tom rosado à carne
+            do atum, uma vez que o metabolismo do atum permite que os músculos do corpo também colaborem na coleta e
+            na filtragem do oxigênio.<br>A troca de calor utilizando o quente sangue venoso para subir a temperatura do
+            sangue novo, até ambos estarem equivalentes em calor, torna a temperatura interna do atum maior do que a das
+            águas em que habita, concedendo-lhe assim maior velocidade e alcance em uma viagem, mais do que qualquer
+            outro peixe, além de ser uma grande defesa contra intempéries, bactérias e fungos.<br>O atum é um peixe dióico,
+            sem dimorfismo sexual aparente, e sua fêmea produz grandes quantidades de ovos planctónicos, que se tornarão
+            larvas pelágicas. Predador ativo, com preferência por peixes menores e moluscos, o atum só forma cardumes 
+            de peixes de mesma idade. </b></p>
+
+            <p class="descricao_animal" id="tubarao"><b>O <span>tubarão </span>é um nome popular usado para nomear
+             um tipo de peixe do grupo dos condrictes, ou seja, dos que possuem esqueleto predominantemente
+             formado por cartilagem. Os tubarões são bastante conhecidos, principalmente, como grandes predadores,
+             mas essa característica não pode ser aplicada a todos os representantes desse grupo de animais.<br>
+             Os tubarões são animais que fazem parte do mesmo grupo das arraias e quimeras, e, por serem peixes, 
+             apresentam algumas características bastante marcantes desse grupo de animais.Assim como todos os
+             peixes, os tubarões são animais que respiram por brânquias, ou seja, utilizam essas estruturas para
+             garantir a retirada de oxigênio da água.<br>"os tubarões possuem corpo que auxilia sua movimentação 
+             no ambiente aquático, ajudando-os a quebrar a resistência da água.<br>Apresentam escamas placóides, que 
+             fazem com que os tubarões apresentem uma superfície que lembra uma lixa. Essas escamas garantem uma natação
+             mais eficiente e possuem uma estrutura semelhante a dentes.Apresentam nadadeiras, que auxiliam na movimentação
+             no ambiente aquático. Movimentos fortes do tronco e da barbatana caudal garantem a movimentação do animal.
+             As barbatanas peitorais e pélvicas auxiliam nas manobras, enquanto as dorsais ajudam como estabilizadoras.<br>
+             Apresentam ausência de bexiga natatória, que é uma estrutura relacionada à flutuabilidade. Para resolver
+             essa questão, os tubarões contam com um fígado grande, que contribui com cerca de 25% da massa do seu
+             corpo, repleto de gordura. Isso faz com que a densidade do animal diminua.<br>Podem ser ovíparos,
+            ovovivíparos ou vivíparos: existem tubarões capazes de botar ovos (ovíparos), tubarões que retêm os
+            ovos em seu oviduto (ovovivíparos) e tubarões que são capazes de garantir o desenvolvimento do seu
+            filhote no interior do útero (vivíparos).<br>Muitas pessoas conhecem os tubarões como grandes
+            predadores que se alimentam de animais grandes, como as focas. Alguns tubarões realmente apresentam
+            esse tipo de comportamento, sendo esse o caso do tubarão-branco, uma espécie que se alimenta, além de
+            focas, de peixes e até tartarugas-marinhas.Vale salientar, no entanto, que nem todos os tubarões
+            possuem esse comportamento. Esse é o caso, por exemplo, do tubarão-baleia, o qual é classificado
+            como filtrador. Esse animal alimenta-se, principalmente, de plâncton.</b></p>
+
+                <p class="descricao_animal" id="cavalo-marinho"><b>O <span>cavalo marinho </span>é uma espécie de peixe
+                 ósseo pertencente à família Syngnathidae e ao gênero Hippocampus que apresenta algumas características
+                 peculiares.<br>Os cavalos-marinhos vivem em águas rasas, tropicais ou temperadas, sendo encontrados em
+                 ambientes estuarinos, recifes, baías e manguezais. Esses peixes apresentam cabeça alongada, que lembra
+                muito a um cavalo, e olhos que se movem de maneira independente. Sua boca é tubular e não possui dentes,
+                por esse motivo, esse peixe se alimenta por sugação. Geralmente, o cavalo-marinho fica esperando que algum
+                pequeno animal passe por ele para sugá-lo.O corpo do cavalo-marinho é pequeno e bastante resistente,
+                formado por uma série de anéis ósseos, e mede em torno de 15 cm a 18 cm. Esses peixes apresentam 
+                nadadeiras, que permitem sua natação, e são ativos durante o dia, apesar de sua pequena mobilidade.
+                Eles possuem nadadeiras peitorais logo atrás do opérculo (placa que protege as brânquias), nadadeiras
+                dorsais, que são utilizadas para a propulsão, e uma nadadeira anal. Possuem ainda uma cauda preênsil,
+                a qual é frequentemente usada para agarrar-se no substrato.<br>Os cavalos-marinhos apresentam uma
+                característica bastante interessante que é a capacidade de mudar de cor, assim como os camaleões.
+                Essa capacidade ajuda na proteção contra predadores (camuflagem), além de auxiliar no momento de 
+                reprodução, uma vez que os cavalos-marinhos tendem a intensificar sua cor quando estão em época
+                reprodutiva.<br>Os cavalos-marinhos têm um comportamento monogâmico, o que acaba interferindo na 
+                taxa reprodutiva quando um membro do casal é retirado. Além disso, eles apresentam como
+                característica marcante o fato de que o macho seja o responsável por gerar o filhote. No momento
+                da cópula, a fêmea do cavalo-marinho transfere seus ovócitos para dentro da bolsa incubadora do
+                macho.<br><span>Os cavalos-marinhos são animais muito ameaçados</span>, principalmente por causa
+                de sua ampla exploração comercial e da constante degradação da área em que vivem. Esses animais
+                são frequentemente vendidos para serem colocados em aquários ou para fins de decoração, ou até
+                mesmo para produção de medicamentos. Não podemos nos esquecer também da captura acidental desses
+                peixes em aparelhos de pesca, um importante fator que contribui para a sua diminuição.</b></p>
+
+                <p class="descricao_animal" id="acara-bandeira"><b>O <span>acará bandeira</span> é um peixe muito pacífico,
+                 podendo ser facilmente criando com outros peixes. Em alguns casos ele pode não se dar muito bem com alguns
+                 tipos de barbos, mas em aquários grandes esse problema não acontece muito.Os Acarás, por serem peixes
+                 mais lentos, devem ter um cuidado especial na hora da alimentação quando criados em aquários comunitários.
+                 É sempre bom prestar atenção para ver se ele conseguiu comer.<br>Embora os Acará Bandeira sejam
+                 muito fáceis de serem criados em um aquário, e importante tomar alguns cuidados para poder
+                 aumentar a vida útil do peixe e deixá-los ainda mais vistosos e coloridos.<br>
+                 Nativos da bacia Amazônica, habitam pequenos rios e lagos com densa vegetação aquática.
+                 Podem ter tamanhos variados de acordo com a espécie, sendo que a maior pode chegar a 20
+                 centímetros de comprimento. É uma espécie ornamental, uma das mais populares de águas tropicais,
+                 e de grande valor comercial. Foi uma das primeiras a aparecer no mundo da aquariofilia e ainda
+                 é uma das mais comuns do mercado. Suscetível a várias doenças infecciosas, é um peixe resistente
+                 e pouco exigente em relação à qualidade da água, sendo uma das espécies mais indicadas para
+                 iniciantes. No entanto podem ser agressivos com alguns peixes, não sendo indicado mantê-los com
+                 peixes muito pequenos.</b></p>
+
+                <p class="descricao_animal" id="aruana-dourado"><b>O <span>aruanã dourado </span> refere-se a diversas
+                 variedades de peixes de água doce do gênero Scleropages.<br>Algumas fontes diferenciam essas variedades
+                 em várias espécies, enquanto outras consideram as diferentes estirpes pertencentes a uma única espécie,
+                 Scleropages formosus.Eles têm vários outros nomes comuns, incluindo o língua-óssea-asiático, o peixe-dragão
+                 e um número de nomes específicos para diferentes variedades.<br>Nativo do sudeste asiático, o aruanã-dourado
+                 habita os rios de águas escuras e calmas que correm através das florestas pantanosas e áreas úmidas.
+                Os peixes adultos alimentam-se de outros peixes, enquanto que os juvenis alimentam-se de insetos.<br>                
+                Estes populares peixes de aquário têm especial significado cultural em regiões influenciadas pela cultura
+                da China. O nome peixe dragão deriva de sua semelhança com o mítico dragão chinês. Esta popularidade
+                traz tanto conseqüências positivas quanto negativas para o seu <span>estado de conservação como espécies ameaçadas.</span></b></p>
+
+                <p class="descricao_animal" id="Piramboia"><b>A <span>Piramboia </span> é um peixe ósseo encontrado na Bacia
+                Amazônica que é pulmonado, ou seja, que respira através de pulmões primitivos. É considerado um fóssil vivo,
+                sendo a possível transição entre os peixes e os anfíbios, já que apresenta tanto respiração branquial quanto 
+                pulmonar em diferentes fases da vida. Essa característica ajuda tais peixes a sobreviver em situações
+                extremas, inclusive fora d’água.<br>É um peixe de aspecto exótico, com o corpo arredondado e comprido,
+                fato que leva o bicho a se parecer com uma cobra. Inclusive, o nome “Piramboia” vem do tupi e
+                significa "peixe-cobra". É a junção dos termos indígenas pirá (peixe) e mboîa (cobra), que fazem
+                referência ao formato alongado, arredondado e fino do animal, que lembra o réptil rastejante.
+                Ademais, sua coloração fica entre o marrom escuro e o cinza.<br>Além disso, a Piramboia tem a cabeça 
+                achatada e dentes semelhantes aos do peixe Traíra. Ela é frequentemente é confundida com o peixe
+                Moreia, porque apresentar características semelhantes quanto ao formato alongado do corpo.Seu corpo
+                arredondado e alongado chama atenção, de modo que muitas pessoas, ao olharem o bicho, pensam que se
+                trata uma cobra. Pelo contrário, a Piramboia é um peixe que possui duas nadadeiras laterais bem
+                pequenas e uma nadadeira caudal fina. Ademais, as barbatanas laterais ajudam o peixe a “andar” na
+                lama quando necessário<br>O peixe Piramboia é bastante comprido que pode atingir até 125 cm e pesar mais
+                de 15 kg. Ainda assim, em média, costuma chegar a 80 cm de comprimento. Há relatos, ainda, de Piramboias
+                encontradas que mediam aproximadamente 2 metros! De modo geral, entre os machos e as fêmeas, não há
+                dimorfismo sexual evidente, ou seja, ambos apresentam o mesmo tamanho.</b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>
