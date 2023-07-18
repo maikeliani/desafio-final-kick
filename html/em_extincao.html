@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>EM EXTINÇÃO</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+        var imagens = document.getElementsByClassName('box');
+        for (var i = 0; i < imagens.length; i++) {
+           imagens[i].addEventListener('mouseover', function() {
+           this.setAttribute('title', " CLIQUE E SEGURE");
+        });
+        imagens[i].addEventListener('mouseout', function() {
+          this.removeAttribute('title');
+        });
+      }
+    });
+
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+    
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="../img/menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="#"><span id="span_li_categoria_menu">EM EXTINÇÃO</span></a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+    <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMIFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('rinoceronte-negro')"><img src="../img/EM EXTINÇÃO/rinoceronte negro.jpg" alt="rinoceronte negro"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('flamingo')"><img src="../img/EM EXTINÇÃO/flamingo.jpg" alt="flamingo"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('mico-leao-dourado')"><img src="../img/EM EXTINÇÃO/mico leão dourado.jpg" alt="mico leão dourado"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('onca-pintada')"><img src="../img/EM EXTINÇÃO/onça pintada.jpg" alt="onça pintada"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('cobra-royal')"><img src="../img/EM EXTINÇÃO/cobra-royal.webp" alt="cobra real"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('guaiamum')"><img src="../img/EM EXTINÇÃO/guiaiamum.jpg" alt="guaiamum"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('jaguatirica')"><img src="../img/EM EXTINÇÃO/jaguatirica.webp" alt="crocodilo"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('peixe-boi-da-amazonia')"><img src="../img/EM EXTINÇÃO/peixe-boi da amazonia.jpg" alt="peixe boi da Amazônia"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('pirarucu')"><img src="../img/EM EXTINÇÃO/pirarucu.webp" alt="pirarucu"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('arara-vermelha')"><img src="../img/EM EXTINÇÃO/arara-vermelha.jpg" alt="arara vermelha"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('harpia')"><img src="../img/EM EXTINÇÃO/harpia.jpg" alt="harpia"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('ariranha')"><img src="../img/EM EXTINÇÃO/ariranha.jpg" alt="ariranha"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+
+        <p class="descricao_animal" id="rinoceronte-negro"><b><span><a href="../html_descriptions/em_extinção/rinoceronte negro.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+         O rinoceronte negro vive na África. Quanto ao seu habitat, preferem viver em áreas que apresentam pastos de altura
+        ou zonas abertas. Em qualquer um dos casos, requerem lugares com água abundante e riqueza quanto a plantas e
+        ervas.As cinco variedades de rinocerontes se destacam por um comportamento territorial, situação que se
+        acentua com as ameaças que devem enfrentar, devido ao fato de terem sido deslocados de seus habitats naturais.
+        Em razão disso, sua agressividade aumenta quando se sentem encurralados em lugares pequenos.<br>         
+        Além das áreas mencionadas, existem rinocerontes vivendo em zoológicos, safaris e áreas protegidas destinadas
+        à conservação da espécie. Entretanto, os altos custos de manter estes animais reduziram a quantidade de
+        exemplares que vivem em cativeiro atualmente<br>
+        O rinoceronte-negro (Diceros bicornis) é originário da África e caracteriza-se por apresentar dois chifres, um
+        maior que o outro. Além do mais, seu lábio superior apresenta forma de gancho, o qual lhe permite alimentar-se
+        de plantas que estão brotando.<br>
+        Esta espécie de rinoceronte mede até dois metros de comprimento e pesa cerca de 1800 quilos. Ao contrário
+        dos tipos anteriores, <span>o rinoceronte-negro está em perigo crítico de extinção</span> devido à caça indiscriminada,
+        a destruição de seus habitats e o desenvolvimento de doenças. Atualmente, tal e como se mostra na lista
+        vermelha da IUCN, estão sendo realizadas distintas medidas de recuperação e conservação da espécie.</b></p>
+
+        <p class="descricao_animal" id="flamingo"><b><span><a href="../html_descriptions/em_extinção/flamingo.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  
+        O flamingo, do (grego) phoinikopteros = que possui as asas vermelhas, com as penas das asas vermelhas; e do (latim) ruber = vermelho, rubro.Ave com as penas das asas 
+        vermelhas ou (ave) com asas vermelhas.<br>
+        Mede de 102 a 122cm. de comprimento e 90cm. de altura. A fêmea é um pouco menor. As asas são grandes, a cauda é curta, as pernas e o pescoço
+        são longos, as pernas e os pés são vermelhos.<br>Para alimentar-se coloca seu bico na água e a língua segura o alimento desejado. A forma e
+        o tamanho do bico funcionam como uma bomba e ao mesmo tempo um filtro da água que é sugada junto com o alimento.<br>
+        Alimenta-se basicamente de plâncton, algas, insetos, larvas, crustáceos e pequenos moluscos. A coloração avermelhada de suas plumas
+        deve-se à ingestão de alimentos ricos em carotenoides.<br>Habita lagoas salobras rasas sem vegetação, próximas ao mar. Alimenta-se, descansa
+        e se reproduz em grupos de tamanhos variáveis, frequentemente grandes, embora alguns indivíduos vagueiem solitários.
+        Seu voo é rápido e direto, com batidas firmes de asas, com o pescoço e pernas esticadas. <br>No Brasil, a espécie encontra-se
+        <u><i>ameaçada de extinção</i></u> na última área em que ainda é encontrada, o estado do Amapá, devido ao estabelecimento de plantações
+        de arroz na região das lagunas, às salinas ao longo da costa, à caça predatória e à captura de seus ovos.</b></p>
+  
+        <p class="descricao_animal" id="mico-leao-dourado"><b><span><a href="../html_descriptions/em_extinção/mico leão dourado.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>  
+        O mico leão dourado, endêmico da Mata Atlântica, é uma espécie que quase desapareceu por causa do desmatamento desenfreado no 
+        litoral brasileiro e a falta de medidas de preservação para proteger a espécie. Atualmente, a Associação Mico-Leão-Dourado, no Rio de Janeiro,
+        tem a meta de manter 2 mil micos vivendo livremente em 25 mil hectares de florestas protegidas na região do
+        Rio de Janeiro até 2025.  </b></p>
+
+        <p class="descricao_animal" id="onca-pintada"><b><span><a href="../html_descriptions/em_extinção/onça pintada.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> A onça pintada está ameaçada de extinção devido a
+        diferentes fatores, como a perda e fragmentação de seu habitat, a caça ilegal e a retaliação por parte de
+        proprietários rurais. A espécie já é considerada oficialmente extinta nos Estados Unidos. No Brasil, a
+        onça-pintada é vulnerável, mas o status de avaliação muda conforme o bioma em que ela vive. A situação é
+        mais delicada na caatinga, onde o animal está criticamente ameaçado de extinção. A União Internacional para a
+        Conservação da Natureza prevê que a onça-pintada provavelmente entrará na lista de espécies ameaçadas na
+        categoria vulnerável em um futuro próximo. A China tem demandado ossos, dentes e outras partes da espécie
+        utilizados na medicina tradicional chinesa. Em 2019, as queimadas na Amazônia mataram, feriram ou desabrigaram
+        até 1,5 mil desses felinos.</b></p>
+
+        <p class="descricao_animal" id="cobra-royal"><b><span><a href="../html_descriptions/em_extinção/cobra real.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+            A cobra real é uma espécie de serpente peçonhenta  da família dos Elapídeos, autóctone da Ásia meridional e do sudeste asiático, que habita as planícies e
+            florestas tropicais da Índia e da China, bem entre outras nações do sudeste asiático.<br>
+            Está ameaçada pela destruição do seu habitat e encontra-se listada como vulnerável na Lista Vermelha da IUCN
+            desde 2010.É a maior cobra peçonhenta conhecida. Cobras-reais adultas normalmente vão de 3 a 4 metros de
+            comprimento, sendo que a maior já registrada chegou a medir 5,85 m.<br>Apesar de contar com o
+            substantivo "cobra" no nome, esta espécie não pertence ao gênero Naja, mas é o único membro do
+            gênero Ophiophagus.É carnívora e a sua dieta consiste basicamente em outros ofídios,
+            venenosos ou não, mas não despreza lagartos, ovos e pequenos mamíferos.O nome científico
+            Ophiophagus significa literalmente "comedora de serpentes".<br>
+            A coloração da cobra-real varia do marrom ao preto com listras brancas ou amarelas, ou ainda verde-azeitona sem
+            listras. O pescoço possui uma capa que se expande ao se sentir ameaçada.As cobras jovens são pretas brilhantes
+            com faixas amarelas estreitas (podem ser confundidos com um krait com faixas, mas facilmente identificados
+            com seu capuz expansível). A cabeça de uma cobra adulta pode ser bastante compacta e volumosa na aparência,
+            embora, como todas as cobras, possa expandir suas mandíbulas para engolir grandes presas. Sua dentição é 
+            proteroglífica, o que significa que tem duas presas curtas e não retráteis na frente da boca por onde
+            canalizam o veneno para dentro da presa. A expectativa de vida de uma cobra-real é de cerca de 20 anos.<br>
+            Trata-se de uma das espécies de serpente de que mais facilmente se diferenciam os sexos. As
+            cobras-rei são sexualmente dimórficas em tamanho e em cor. Os machos atingem tamanhos maiores que
+            as fêmeas, o que é uma característica incomum entre as cobras cujas fêmeas geralmente são maiores
+            que os machos. Os machos têm cores mais claras à exceção da cauda, que em geral é preta em ambos
+            os sexos.<br>Apesar de ter um veneno de toxidade moderada (com uma toxicidade inferior a da maioria da família
+            dos Elapídeos), a cobra-real possui a capacidade de inocular grandes quantidades por mordida, o que a torna
+            uma das serpentes mais letais. Numa só mordida ela pode libertar até sete mililitros de neurotoxina,
+            suficiente para matar um tigre ou até mesmo um elefante.</b></p>
+
+
+            <p class="descricao_animal" id="guaiamum"><b><span><a href="../html_descriptions/em_extinção/guaiamum.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+            O guaianum é um espécie de caranguejo terrestre da família dos gecarcinídeos (Gecarcinidae). É encontrado em estuários tropicais e subtrópicos e outras áreas
+            marítimas de terra ao longo da costa atlântica da América do Sul desde o sul do Brasil, através do Caribe e
+            golfo do México, às Baamas e norte para Ponce Inlet, Princess Place Preserve em Palm Coast e Bermudas. A
+            espécie varia em cor de azul escuro a marrom ou cinza pálido, e pode crescer até 15 centímetros (6 polegadas)
+            na largura da carapaça e pesar mais de 500 gramas.<br>Em 2005, foi classificado como vulnerável na Lista de
+            Espécies da Fauna Ameaçadas do Espírito Santo; em 2011, como vulnerável na Lista das Espécies da Fauna
+            Ameaçada de Extinção em Santa Catarina; em 2014 e 2018, respectivamente, como criticamente em perigo no Livro
+            Vermelho da Fauna Brasileira Ameaçada de Extinção e na Lista Vermelha do Livro Vermelho da Fauna Brasileira
+            Ameaçada de Extinção do Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio); e em 2017, como
+            vulnerável na Lista Oficial das Espécies da Fauna Ameaçadas de Extinção do Estado da Bahia;e em 2018, como em
+            perigo na Lista das Espécies da Fauna Ameaçadas de Extinção no Estado do Rio de Janeiro.Duas portarias,
+            445/2014 e 395/2016, do Ministério do Meio Ambiente, proíbem a captura, transporte, armazenamento, guarda,
+            manejo, beneficiamento e comercialização do crustáceo. </b></p>
+
+            <p class="descricao_animal" id="jaguatirica"><b><span><a href="../html_descriptions/em_extinção/jaguatirica.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>
+             A jaguatirica é um felino de médio porte que ocorre em várias regiões da América. Trata-se de uma espécie que 
+             apresenta um padrão de pelagem bastante característico, com pelos amarelados e manchas negras em rosetas abertas que se unem
+              formando bandas no corpo do animal. São animais solitários, territoriais e que apresentam atividade tipicamente noturno-crepuscular.
+             Atualmente, as jaguatiricas estão classificadas na IUCN como pouco preocupantes, mas ainda sofrem com problemas
+            como caça, destruição de habitat e exploração madeireira.<br>A jaguatirica é um animal pertencente ao filo
+            Chordata, classe Mammalia, ordem Carnivora, família Felidae, gênero Leopardus e espécie Leopardus pardalis.
+            Trata-se de uma das espécies de felinos neotropicais mais conhecidas cientificamente, sendo um dos motivos
+            para esse título sua grande distribuição geográfica.Esses animais destacam-se por seu padrão de pelagem que
+            lembra o da onça-pintada, possuindo pelos amarelados com manchas escuras. Nas jaguatiricas, no entanto, a
+            manchas negras tendem a formar rosetas abertas e que se juntam e formam bandas nas laterais do corpo. Assim
+            como em outros animais que presentam esses padrões em pelagens, as manchas na jaguatirica funcionam como a 
+            nossa impressão digital, por serem únicas.<br>A jaguatirica é um animal que apresenta porte médio, com
+            comprimento variando entre 67 e 101, 5 cm e uma cauda que representa cerca de 46% do comprimento do seu corpo.
+            Machos são, em geral, mais pesados que as fêmeas, sendo que o peso das jaguatiricas varia entre 6,6 e 18,6 kg.
+            Vale salientar que o peso desses felinos varia de acordo com o habitat em que ocorrem, sendo maiores quando
+            estão em ambientes florestais. São animais solitários e territoriais. A atividade da espécie é tipicamente
+            noturno-crepuscular. Entretanto, a jaguatirica pode também ser ativa durante o dia. Contudo, normalmente, 
+            as jaguatiricas dormem durante o dia em ocos de árvores e em arbustos. São animais habilidosos quando o
+            assunto é escalar, saltar e nadar. As jaguatiricas podem viver na natureza cerca de dez anos. Já em
+            cativeiro, essa expectativa de vida pode chegar aos 20 anos.</b></p>         
+            
+            <p class="descricao_animal" id="peixe-boi-da-amazonia"><b><span><a href="../html_descriptions/em_extinção/peixe boi da Amazônia.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+            O peixe boi da Amazônia pertencem a um grupo taxonômico totalmente distinto dos golfinhos – ordem Sirenia e família Trichechidae. O nome “inunguis”, que
+            significa “sem unhas”, difere o peixe-boi-da-Amazônia dos outros peixes-bois que possuem unhas na ponta das
+            nadadeiras.<br>O peixe-boi-da-Amazônia é o menor de todos, atingindo no máximo 275 centímetros de comprimento e a
+            pesar 420 quilos. É o maior herbívoro aquático dos rios amazônicos. Além da cor preta, tem como característica
+            uma ou mais manchas mais claras, brancas ou rosadas, na região ventral do corpo, que são usadas pelos
+            pesquisadores que trabalham com essa espécie para identificação individual, da mesma forma como fazemos com
+            as impressões digitais.<br>Diferente também dos golfinhos de rio (boto-vermelho e o tucuxi), o peixe-boi, desde
+            antes da chegada dos europeus ao Brasil, era caçado pelos nativos pela sua carne, gordura e pelo espesso e 
+            resistente couro usado como escudo e armadura contra as flechas inimigas.<br>O principal motivo da caça ao
+            peixe-boi foi, inicialmente, por sua carne e gordura e, posteriormente, pelo couro. Sua carne é dita ser muito
+            saborosa e bastante apreciada pelos ribeirinhos amazônicos. Segundo relatos, ela lembra a de porco. Devido ao
+            acúmulo de grande quantidade de gordura entre as camadas musculares e à baixa concentração da proteína
+            mioglobina nos músculos, a carne do peixe-boi é mais clara e rosada, com colorações variando em diferentes
+            partes do corpo.<br>Sua exploração indiscriminada ao longo de séculos reduziu drasticamente as populações
+            naturais, levando a espécie ao estado crítico de conservação. Ainda hoje, o peixe-boi é caçado para 
+            fins de subsistência, mas, também, existe um mercado ilegal da sua carne in natura e de mixira. Dados não
+            publicados do Laboratório de Mamíferos Aquáticos do Instituto Nacional de Pesquisas da Amazônia (Inpa)
+            revelam que em pleno século XXI ainda é comum encontrar carne de peixe-boi e de outras caças em mercados
+            populares e feiras de Manaus, Manacapuru, Coari, Tefé e de outras cidades ao longo da calha do rio Amazonas. </b></p>
+
+            <p class="descricao_animal" id="pirarucu"><b><span><a href="../html_descriptions/em_extinção/pirarucu.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>  
+            O pirarucu é um dos maiores peixes de água doce do planeta. Nativo da Amazônia, ele promove benefícios para o ecossistema
+             e comunidades que vivem da pesca. Seu nome vem de dois termos indígenas pira, "peixe", e urucum, "vermelho", devido à cor de
+            sua cauda.<br> é um dos maiores peixes de água doce do planeta. Nativo da Amazônia, ele promove benefícios para
+            o ecossistema e comunidades que vivem da pesca. Seu nome vem de dois termos indígenas pira, "peixe", e urucum,
+            "vermelho", devido à cor de sua cauda.<br>O pirarucu chega ao mercado em mantas, depois de passar por processo de
+            salga ao sol. É conhecido também como o bacalhau da Amazônia devido ao sabor e qualidade da carne, quase sem
+            espinhos.<br>Com o aumento da pesca comercial nas últimas décadas, os estoques pesqueiros vêm sofrendo uma 
+            pressão cada vez mais intensa. Isso gera impacto nas populações das principais espécies comerciais, como o 
+            pirarucu.<br>
+            A espécie corre risco de extinção devido à pesca predatória praticada ao longo de muitos anos. A 
+            reprodução natural do peixe é insuficiente para repor o número de pirarucus pescados. A exploração não 
+            sustentável fez com que o Ibama - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis
+            - criasse em 2004 uma Instrução Normativa que regulamenta a pesca do pirarucu na Amazônia, proibindo-a em
+            alguns meses do ano e estabelecendo tamanhos mínimos para pesca e comercialização da espécie.</b></p>
+
+            <p class="descricao_animal" id="arara-vermelha"><b><span><a href="../html_descriptions/em_extinção/arara vermelha.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+            A arara vermelha ocorre em grande parte do Brasil, ocupando a região da Amazônia e os rios costeiros margeados 
+            por florestas, chegando até o Espírito Santo, Rio de Janeiro e interior do Paraná. Pode ser encontrada também no norte 
+            da Colômbia, planícies venezuelanas, Bolívia e norte da Argentina. Pertence à classe das aves, ordem Psittaciformes e família 
+            Psittacidae. É um dos maiores psitacídeos brasileiros, com cerca de 90 centímetros. Sua face é cortada por fileiras de penas
+            vermelhas; na cabeça, nas costas e na barriga possui coloração também avermelhada, com uma faixa verde.
+            Costumam andar em bandos ou em pares.<br>Essa espécie de arara é mais generalista do que suas parentes - as
+            araras azuis. Alimenta-se preferencialmente de sementes com polpas, na copa das árvores e em arbustos. Só no
+            estado do Paraná consomem os frutos de mais de 13 espécies de plantas arbóreas, tanto nativas quanto exóticas.
+            Geralmente utilizam o bico como o terceiro pé e usam as patas para segurar o alimento e levá-lo à boca.
+            Através das fezes, espalham pela floresta as sementes dos vegetais de que se alimenta, desempenhando assim um
+            importante papel ecológico dentro do ciclo de vida dessas plantas.<br>esta ave situa-se como membro da lista que 
+            compõe as procuradas para o tráfico de espécies. Em que, por ser uma ave que tem se destacado por estar no
+            ambiente doméstico, é requisitada em larga escala pelos membros dos domicílios. Junto com a crescente demanda 
+            por sua plumagem e ovos para comercialização escura.<br>Que embora eles não queiram prejudicá-la diretamente,
+            eles a prejudicam indiretamente, levando-a para simplesmente satisfazer um desejo de vê-la dentro de uma
+            jaula. Onde o resultado é limitar sua liberdade, vida, reprodução e desenvolvimento, encarecendo
+            completamente seu estado normal e sua qualidade de vida.<br>
+            Nesse sentido, a busca arbitrária, proibida ou ilícita deve ser realizada, razão pela qual a arara está
+            em perigo de extinção. É a principal causa do problema. Que é o resultado da alta demanda para sua
+            venda. Em que inicialmente não se mostra como gatilho para sua extinção ou fator de abuso. Porque
+            supostamente o vêem como um abrigo ou cuidado que darão ao animal.</b></p>         
+                       
+
+            <p class="descricao_animal" id="harpia"><b><span><a href="../html_descriptions/em_extinção/harpia.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+                A harpia, cientificamente denominada Harpia harpyja, pertence à classe das aves, particularmente a das carnívoras;
+                 ela é igualmente intitulada gavião-real ou uiraçu-verdadeiro. Este animal, encontrado com maior frequência em países como México, Brasil, Argentina,
+                Colômbia, e também na América Central, é uma das de maior porte e peso em todo o Planeta.<br>
+                Esta ave de rapina se alimenta basicamente de bichos pequenos e de tamanho médio, como os mamíferos e outras
+                aves. A extensão de suas asas abertas alcança 2,5 metros e ela pesa até 10 quilogramas. Fisicamente a
+                harpia apresenta olhos diminutos, topete extenso, uma crista adornada com duas penas de maior porte e a
+                parte traseira com três listas de cor cinza.<br>Suas asas são amplas e esféricas, as pernas são encorpadas,
+                mas têm o porte limitado, os dedos são muito possantes, apresentando imensas garras nas extremidades,
+                com as quais estas aves podem erguer até mesmo um animal volumoso do solo. A cabeça é acinzentada, enquanto
+                a papada e a nuca são enegrecidas, e a barriga e a região interna das asas são brancas.<br>Uma característica
+                que distingue esta ave é a presença de uma superfície circular na face, constituída por pequenas penas,
+                a qual é capaz de por em foco ondas de som que podem aprimorar suas virtudes auditivas.<br>
+                Outra propriedade típica dela é seu dom de realizar vôos que lembram os empreendidos pelos acrobatas,
+                em florestas tropicais compactas, nas quais habitam.<br>              
+                Estes animais, que se nutrem de outros seres vivos, são muito velozes e poderosos em seus ataques; assim,
+                podem conduzir facilmente sua caça volumosa ao alto de um arbusto.<br> Eles vivem em média 40 anos e alcançam
+                a fase madura aos seis anos.<br> No Brasil as harpias têm como habitat especialmente a região amazônica,
+                na qual escolhem grandes árvores para morar, no meio da mata cerrada. Aí elas edificam seus ninhos.</b></p>
+
+            <p class="descricao_animal" id="ariranha"><b><span><a href="../html_descriptions/em_extinção/ariranha.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> 
+            A ariranha é um mamífero semiaquático endêmico da América do Sul, ou seja, ele ocorre apenas nesse subcontinente, em países como Brasil, Peru, Colômbia, Paraguai,
+            Venezuela, Suriname, etc.Esse animal também é conhecido como lontra-gigante, vive em torno de 20 anos, pode
+            ser encontrado em ambientes de água doce e é um dos maiores carnívoros presentes na América do Sul.<br>
+            O corpo da ariranha é longo podendo chegar a 1,8 metro de comprimento e 45 quilos. Elas são recobertas por
+            pelagem densa e escura e possuem apenas uma mancha branca no pescoço.Elas têm uma cauda robusta e achatada, e
+            membranas entre os dedos, características que auxiliam as ariranhas na hora de nadar.<br>Geralmente, as ariranhas
+            escolhem viver em rios e lagos calmos, com abundância de alimentos, menor ação antrópica, vegetação densa e
+            declives suaves nas margens.<br>
+            As ariranhas são animais que vivem em grupos, podendo ter até 15 animais morando numa mesma toca. Elas são
+            exímias caçadoras e se alimentam de peixes, alguns crustáceos, moluscos e também pequenos mamíferos, aves e 
+            répteis.<br>As ariranhas podem dar à luz até cinco filhotes em uma única gestação. Elas constroem tocas na beirada
+            dos rios ou lagos em que vivem e os filhotes permanecem dentro delas por pelo menos 1 mês e meio.<br>
+            O cuidado parental das ariranhas permanece por cerca de um ano, até que os filhotes aprendam a caçar seu 
+            próprio alimento.As ariranhas são animais ameaçados de extinção pela perda de habitat. Segundo a 
+            classificação da União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN), as
+            ariranhas estão na categoria “perigo”.<br>
+            O desmatamento e a expansão das áreas urbanas são os principais responsáveis pela perda de habitat das
+            ariranhas.No entanto, a mineração, a atividade antrópica que polui o meio ambiente e a destruição da
+            vegetação presente nas margens dos rios e lagos também contribuem para a ameaça de extinção desses
+            animais. </b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

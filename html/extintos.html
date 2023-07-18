@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>EXTINTOS</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+        var imagens = document.getElementsByClassName('box');
+        for (var i = 0; i < imagens.length; i++) {
+           imagens[i].addEventListener('mouseover', function() {
+           this.setAttribute('title', " CLIQUE E SEGURE");
+        });
+        imagens[i].addEventListener('mouseout', function() {
+          this.removeAttribute('title');
+        });
+      }
+    });
+
+    </script>
+
+
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+    
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="../img/menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO</a></li>
+                    <li><a href="#"><span id="span_li_categoria_menu">EXTINTOS</span></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+    <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMIFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="./anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('tartaruga-gigante-galapagos')"><img src="../img/extintos/tartaruga-gigante-galapagos.webp" alt="tartaruga gigante de Galápagos"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('foca-monge-do-caribe')"><img src="../img/extintos/foca-monge-do-caribe.webp" alt="foca monge do Caribe"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('golfinho-do-rio-chinês')"><img src="../img/extintos/Golfinho-do-rio-chinês.webp" alt="golfinho do rio chinês"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('ibex-dos-Pirineus')"><img src="../img/extintos/Ibex-dos-Pirineus.webp" alt="ibex dos Pirineus"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('tigre-de-Java')"><img src="../img/extintos/tigre-de-java-2.jpg" alt="tigre de Java"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('tubarao-lagarto')"><img src="../img/extintos/Tubarão-lagarto.webp" alt="tubarão lagarto"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('mutum-do-Nordeste')"><img src="../img/extintos/mutum-do-nordeste3.jpg" alt="mutum do Nordeste"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('rato-candango')"><img src="../img/extintos/rato-candango.webp" alt="rato candango"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('tilacino')"><img src="../img/extintos/tilacino2.jpg" alt="tilacino"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('perereca-de-perereca-de-santo-andre')"><img src="../img/extintos/perereca-de-santo-andre.webp" alt="arara vermelha"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('cabra-montesa')"><img src="../img/extintos/cabra-montesa-2.png" alt="cabra montesa"></button></div>
+        <div class="box"><button type="button" onclick="MostraTextoAnimal('leao-do-Cabo')"><img src="../img/extintos/leao-do-cabo2.jpg" alt="leão do Cabo"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+
+        <p class="descricao_animal" id="tartaruga-gigante-galapagos"><b><span><a href="../html_descriptions/extintos/tartaruga_gigante_galapagos.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> Essa é a tartaruga gigante de Galápagos. O último exemplar
+        da tartaruga gigante de Galápagos morreu no ano de 2012, onde vivia em cativeiro. Na natureza, a espécie já
+        era considerada extinta há mais de 150 anos.<br>
+        Os animais desta espécie viviam por mais de 100 anos. Atualmente, pesquisadores do mundo todo realizam
+        estudos para recuperar a espécie a partir da extração do DNA. </b></p>
+
+        <p class="descricao_animal" id="foca-monge-do-caribe"><b><span><a href="../html_descriptions/extintos/foca monge do Caribe.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  A foca monge do Caribe é um mamífero que costumava habitar
+        o mar do Caribe. Esta espécie foi considerada extinta por volta do ano de 2008.<br>
+        A principal causa de sua extinção foi decorrente da caça para utilização da pele e fins alimentícios.</b></p>
+  
+        <p class="descricao_animal" id="golfinho-do-rio-chinês"><b><span><a href="../html_descriptions/extintos/golfinho do rio chinês.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS </a></span> O golfinho do rio Chinês, Conhecido como
+        o golfinho-lacustre-chinês, é uma espécie foi extinta em 2007.<br>
+        A principal causa de sua extinção foi a intervenção do homem na natureza ao provocar diversos desequilíbrios
+        no ecossistema do animal, como poluição das águas, navegação excessiva, bem como a caça indiscriminada. </b></p>
+
+        <p class="descricao_animal" id="ibex-dos-Pirineus"><b><span><a href="../html_descriptions/extintos/Ibex dos Pirineus.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS </a></span> Esse é o Ibex dos Pirineus. A última espécie do
+        Ibex-dos-Pirineus morreu no ano de 1997. O principal habitat desta animal era o norte da Espanha e sul da
+        França.<br>
+        Ele foi o primeiro a ser considerado extinto por duas vezes. Na década de 80, algumas espécies viviam em 
+        cativeiro, contribuindo para a realização de programas de reprodução. No entanto, foi em 1997 que a última
+        espécie viva morreu.</b></p>
+
+        <p class="descricao_animal" id="tigre-de-Java"><b><span><a href="../html_descriptions/extintos/tigre de Java.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS </a></span> Esse é o Tigre de Java. Esta espécie de tigre foi
+        nativo da Ilha de Java, na Indonésia, e foi extinto por volta do ano de 1994.<br>
+        As principais causas de sua extinção estão relacionadas a perda de seu habitat, ocasionada, sobretudo,
+        pela expansão da agricultura. </b></p>
+
+
+        <p class="descricao_animal" id="tubarao-lagarto"><b><span><a href="../html_descriptions/extintos/tubarão lagarto.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> O tubarão-lagarto foi uma 
+        espécie considerada extinta no ano de 1988, data em que foi visto o último exemplar.<br>
+        A principal causa relacionada à sua extinção foi a poluição dos oceanos, além do tráfego intenso de navios no
+        local em que o animal vivia e se reproduzia.</b></p>
+
+            <p class="descricao_animal" id="mutum-do-Nordeste"><b><span><a href="../html_descriptions/extintos/mutum do nordeste.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>  O mutum do Nordeste é uma ave nativa da Mata
+            Atlântica e foi extinta da natureza nos anos 30, porém, atualmente ainda é possível encontrar algumas poucas
+            espécies em cativeiro.<br>
+            As principais causas de sua extinção estão ligadas à caça e, sobretudo, à destruição de seu habitat para o
+            plantio de cana-de-açúcar na região.</b></p>         
+            
+            <p class="descricao_animal" id="rato-candango"><b><span><a href="../html_descriptions/extintos/rato candango.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> O rato-candango era um
+            animal endêmico do cerrado brasileiro e que habitava a região do Planalto Central.
+            <br>O rato-candango foi extinto em 1960, sendo que a causa principal de sua extinção foi a degradação de seu
+            habitat, causada pela construção da cidade de Brasília. </b></p>
+
+            <p class="descricao_animal" id="tilacino"><b><span><a href="../html_descriptions/extintos/tilacino.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  O tilacino, conhecido popularmente como lobo-da-tasmânia
+            ou tigre-da-tasmânia, o tilacino é nativo da Austrália e da Nova Guiné.<br>
+            Esse animal foi extinto na década de 30, sendo que a maior causa pelo desaparecimento da espécie foi a caça
+            predatória.</b></p>
+
+            <p class="descricao_animal" id="perereca-de-perereca-de-santo-andre"><b><span><a href="../html_descriptions/extintos/perereca de santo André.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> Esta é a perereca de Santo André.
+            Esta espécie de anfíbio foi extinta nos anos 20. Seu habitat era o estado de São Paulo, mais precisamente a
+            região da cidade de Santo André.<br>
+            Pesquisadores ainda não desvendaram a causa do desaparecimento da espécie.</b></p>         
+                       
+
+            <p class="descricao_animal" id="cabra-montesa"><b><span><a href="../html_descriptions/extintos/cabra montesa.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> A cabra montesa ficou também
+            conhecida como Íbex-português.<br>
+            Esta espécie habitava o norte de Portugal e da Espanha e foi extinta no século XIX principalmente 
+            pela caça.</b></p>
+
+            <p class="descricao_animal" id="leao-do-Cabo"><b><span><a href="../html_descriptions/extintos/leão do cabo.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> O leão do Cabo é uma espécie de leão
+            nativa da África do Sul foi extinta por volta de 1865.<br>
+            A principal causa de sua extinção se deve a recorrente caça esportiva e para proteger as propriedades e
+            os rebanhos. </b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

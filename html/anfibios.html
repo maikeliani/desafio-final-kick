@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>ANFÍBIOS</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+        
+        window.addEventListener('DOMContentLoaded', function() {
+        var imagens = document.getElementsByClassName('box');
+        for (var i = 0; i < imagens.length; i++) {
+           imagens[i].addEventListener('mouseover', function() {
+           this.setAttribute('title', " CLIQUE E SEGURE");
+        });
+        imagens[i].addEventListener('mouseout', function() {
+          this.removeAttribute('title');
+        });
+      }
+    });
+
+    </script>
+
+
+
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+    
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="../img/menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+    <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="./aves.html">AVES</a></li>
+            <li><a href="./repteis.html">REPTEIS</a></li>
+            <li><a href="./index.html">MAMIFEROS</a></li>
+            <li><a href="./peixes.html">PEIXES</a></li>
+            <li><a href="#"><span id="span_li_categoria">ANFÍBIOS</span> </a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('salamandra-toupeira')"><img src="../img/anfibios/salamandra toupeira.jpg" alt="salamandra toupeira"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('tritao-marmoreado')"><img src="../img/anfibios/tritao-marmoreado.jpg" alt="tritão marmoreado"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('perereca-de-vidro')"><img src="../img/anfibios/perereca-de-vidro.jpg" alt="perereca de vidro"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('sapo-cururu')"><img src="../img/anfibios/sapo-cururu.jpg" alt="sapo cururu"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('cobra-cega')"><img src="../img/anfibios/cobra-cega.jpg" alt="cobra cega"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('sapo-de-vidro')"><img src="../img/anfibios/sapo-de-vidro.webp" alt="sapo de vidro"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('Breviceps-fuscus')"><img src="../img/anfibios/Breviceps-fuscus.webp" alt="Breviceps fuscus"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('sapo-arlequim')"><img src="../img/anfibios/sapo-arlequim.jpg" alt="sapo arlequim"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('sapo-tartaruga')"><img src="../img/anfibios/sapo-tartaruga.webp" alt="sapo tartaruga"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('sapo-boi-indiano')"><img src="../img/anfibios/sapo-boi-indiano.webp" alt="sapo boi indiano"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('Pumpkin-toadlet')"><img src="../img/anfibios/Pumpkin-toadlet.webp" alt="pumpkin toadlet"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('salamandra-axolotl')"><img src="../img/anfibios/salamandra-axolotl.png" alt="axolotl"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+            <p class="descricao_animal" id="salamandra-toupeira"><b><span><a href="../html_descriptions/anfibios/salamandra topeira.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  As salamandras toupeiras são um grupo de salamandras
+             endêmicas da América do Norte, o único gênero na família Ambystomatidae.As salamandras-toupeira têm esse nome porque a
+             maior parte de sua vida é passada no subsolo em tocas. No final do inverno / início da primavera, elas emergem do solo
+             para convergir em piscinas vernais.<br>
+             Todas as salamandras-toupeira são ovíparas e põem ovos grandes em grupos na água. Suas larvas totalmente
+             aquáticas são ramificadas, com 3 pares de brânquias externas atrás de sua cabeça e acima de suas fendas
+             branquiais.<br>A salamandra-toupeira é um dos menores membros da família Ambystomatidae, atingindo
+             comprimentos de cerca de 4 polegadas. A coloração geral varia de um fundo marrom escuro a preto com manchas
+             brancas, cinza ou prateadas.<br>As salamandras-toupeira (Família Ambystomatidae) são encontradas apenas na
+             América do Norte. Como outros membros da Ordem Caudata, eles têm corpos delgados, caudas longas e regiões
+             corporais distintas com braços e pernas aproximadamente do mesmo tamanho.</b></p>
+
+            <p class="descricao_animal" id="tritao-marmoreado"><b><span><a href="../html_descriptions//anfibios/tritão marmoreado.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> O tritão marmoreado é da mesma família das
+            salamandras, sendo um anfíbio caudado com algumas diferentes de sapos que não tem cauda. Suas cores são mais
+            escuras, porém possuem algumas manchas de forma não específica por todo corpo em tons de verde, o que lhe
+            rendeu esse belo e diferente nome. Para saber se estamos nos referindo a uma fêmea ou macho, esses animais
+            possuem uma risca de cor branca ou alaranjada em sua cauda, e durante as temporadas reprodutivas, possuem
+            crista dorsal de tamanho bem menor quando nos referimos a outros da mesma espécie. As fêmeas além de não
+            possuírem o risco em sua causa, também não tem essa crista, e no lugar dela à risca da causa dos machos é 
+            vista na cabeça, sendo o mesmo tamanho e a mesma tonalidade de cores.<br>Suas barrigas podem ser brancas,
+            amarelas ou pretas com algumas manchas nesses mesmos tons, sendo um animal bem colorido, se comparado aos
+            outros. Suas patas de trás possuem 4 dedos e as patas da frente possuem 5 dedos. Podem chegar a medir já
+            contando com a cauda quase 20 centímetros.<br>Quando se sente ameaçado pode soltar ingredientes tóxicos
+            para afastar os predadores, além de uma postura defensiva, erguendo o corpo e mexendo o rabo de um lado
+            para o outro involuntariamente.</b></p>
+
+            <p class="descricao_animal" id="perereca-de-vidro"><b><span><a href="../html_descriptions/anfibios/perereca de vidro.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  A perereca de vidro apresenta uma 
+            peculiaridade: as vísceras ficam visíveis, e quem a observar com atenção poderá ver o coração bombeando o
+            sangue para as artérias. Além disso, também é possível observar os alimentos se movendo através do intestino.
+            <br>Até o momento, não há uma explicação satisfatória para essa transparência, e nem todas as espécies têm a
+            parte inferior de ‘vidro’. Vistas de cima, a maioria das pererecas de vidro tem uma cor verde clara.                
+            As tonalidades variam desde um verde uniforme até um verde com manchas brancas ou amarelas. Devido à
+            dificuldade de encontrar esses anfíbios, novas espécies são descritas frequentemente e, assim, a família não 
+            para de crescer.<br>Os adultos podem medir entre dois e três centímetros de comprimento, embora existam espécies
+            nas quais uma perereca adulta pode medir até oito centímetros de comprimento máximo.Assim como outras
+            espécies de pererecas, as de vidro também têm falanges terminais em forma de ‘T’, intercaladas por uma
+            cartilagem e com pontas expandidas, que ajudam na escalada.<br>A perereca de vidro é uma espécie com hábitos
+            noturnos que aproveita o pôr do sol para coletar alimentos, principalmente pequenos insetos. Elas não
+            costumam passar muito tempo na terra, especialmente fora da temporada de reprodução, quando procuram
+            permanecer no alto das árvores.</b></p>
+
+            <p class="descricao_animal" id="sapo-cururu"><b><span><a href="../html_descriptions/anfibios/sapo cururu.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> O sapo cururu é um anfíbio muito conhecido e
+            comumente encontrado no Brasil. São animais de grande porte, possuem protuberância acima dos olhos até o
+            focinho, uma grande glândula paratóide atrás de cada olho, ausência de dentes, membrana interdigital nas
+            patas dianteiras, pele seca e rugosa.Esse grupo de sapos tem a presença do órgão de Bidder, que consiste
+            em ovários rudimentares presentes em machos utilizados para troca de sexo, apresentam dimorfismo sexual
+            quanto à coloração e ao tamanho dos animais. As fêmeas são, em geral maiores. A coloração varia de acordo
+            com a espécie mas dentro do espectro de marrom até amarelo-pardo.<br>Na reprodução, os machos coaxam para
+            atrair a fêmea, abraçam-nas pela cintura, que depositam os ovos que são recobertos com esperma Em cada
+            postura uma fêmea coloca de 8.000 a 35.000 ovos. Podem ser encontrados em habitats terrestres,
+            necessitando de pequenas recursos de água para reprodução. Ocupam áreas de plantações, florestas, árvores,
+            lagos, jardins, áreas urbanas, canais e rios. Possuem hábitos noturnos, enquanto durante o dia permanecem
+            escondidos sob rochas ou em buracos no solo de jardins, para protegerem-se da exposição direta à luz solar.
+            <br>Por serem animais de grande porte (em relação à outros anfíbios) sua alimentação pode ser composta
+            de pequenos vertebrados (aves e mamíferos), invertebrados (besouros, formigas, minhocas e centopeias)
+            e até de vegetais, sendo uma das poucas espécies onívoras de sapos.Quando ameaçado o animal exibe um
+            comportamento típico dos sapos, inflando os pulmões, emitindo sons abafados característicos e
+            inclinando o corpo em direção ao estímulo, de forma a deixar as bolsas de veneno em evidência.</b></p>
+
+            <p class="descricao_animal" id="cobra-cega"><b><span><a href="../html_descriptions/anfibios/cobra cega.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> A cobra cega é um anfíbio e tem esse nome pelo fato
+            de elas possuírem um corpo cilíndrico completamente ausente de membros, muito parecido com o corpo das cobras.
+            O próprio nome Gymnophiona é constituído por dois termos latinos Gymnos = nu e opineos = cobra. Após pesquisas
+            e estudos mais aprofundados, foi concluído que apesar da forma do corpo parecida, as cecílias são mais
+            próximas dos sapos e salamandras do que das cobras.<br>Provavelmente, o fato de os olhos serem pequenos e pouco
+            funcionais está associado aos hábitos de vida destes animais. As cecílias são animais fossoriais, mas o que
+            isso significa? Animais fossoriais são os que passam maior parte do seu ciclo de vida, se não todo ele, abaixo
+            da terra. Sendo assim, em um lugar completamente escuro não há necessidade de olhos funcionais.<br>Os olhos 
+            estão associados mais à função fotorreceptora (interpretação da luz, se é claro ou escuro) do que à formação
+            de imagens. Além dos olhos fotorreceptores, as cecílias possuem pequenos tentáculos entre os olhos e as
+            narinas que funcionam como receptores táteis, auxiliando os animais a interpretar o ambiente à sua volta.
+            O corpo é alongado, cilíndrico e com dobras visíveis na pele, formando anéis.Esses animais são carnívoros,
+            ou seja, se alimentam de outros animais. Sua dieta é composta basicamente de invertebrados, como cupins,
+            formigas e minhocas.</b></p>
+
+
+            <p class="descricao_animal" id="sapo-de-vidro"><b><span><a href="../html_descriptions/anfibios/sapo de vidro.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> Os sapos de vidro recebem esse nome por causa de
+            sua pele translúcida e músculos que os misturam perfeitamente ao ambiente da selva. Vire os anfíbios, onde o
+            efeito é mais impressionante, e você verá seus corações, fígados e espirais onduladas de intestinos – não é
+            necessária dissecação.<br>O sapo-de-vidro é uma das criaturas mais únicas do Reino Animal. Os pequenos
+            anfíbios possuem uma distinta transparência em sua pele que os ajuda na camuflagem contra predadores
+            em seu hábitat natural: as florestas tropicais da América Central e do Sul. Dessa forma, o padrão de
+            cores criado pelos órgãos ajuda o anfíbio a se esconder de maneira eficiente de ameaças e perigos no 
+            ambiente.Geralmente pequenos (com porte que varia entre 3 e 7,5 centímetros), os sapos-de-vidro são 
+            animais pertencentes à família Centrolenidae e dividem-se em 150 diferentes tipos de espécie. A maioria
+            delas possui uma fina pele translúcida, que emite um brilho semelhante ao vidro e, assim, permite a
+            visualização dos órgãos em sua barriga.<br>Para os cientistas, a pele translúcida do sapo-de-vidro é um método
+            único de camuflagem. Nesse sentido, há dois tipos de adaptação à cor do meio, de acordo com um artigo deste
+            ano: o primeiro, mais comum, é uma "mímica" das cores e padrões encontrados, como fazem alguns camaleões;
+            o segundo tipo é "disruptivo", que cria alto contraste e formas irreconhecíveis, e acabam protegendo o
+            anfíbio.Dessa maneira, experimentos mostraram que a pele dos sapos-de-vidro é única e interage de maneira
+            mais disruptiva do que o comum. Ela pode adaptar seu brilho, tornando-se mais clara ou escura, de acordo
+            com o ambiente no entorno do anfíbio.</b></p>
+
+            <p class="descricao_animal" id="Breviceps-fuscus"><b><span><a href="../html_descriptions/anfibios/breviceps fuscus.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> O Breviceps Fuscus é uma espécie de anfíbio
+            da família Microhylidae, endémica da África do Sul. Os seus habitats naturais são: florestas temperadas e
+            matagais mediterrânicos. A espécie está ameaçada de extinção por perda de seu habitat natural. Possui, em
+            média, 5cm de comprimento e é capaz de cavar galerias com túneis de até 15 centímetros de profundidade.
+            Quando se sentem ameaçados, eles incham para que pareçam maiores e mais ameaçadores.<br>É endémica da
+            África do Sul.Os sapos da família dos Brevicipitídeos desprezam a água: são encontrados até no deserto
+            de Kalahari. O breviceps não sabe nadar e, se cai na água, afoga-se. Seu nome significa “cabeça pequena”.
+            De fato sua cabeça é muito pequena e, quando ele se inquieta, incha o corpo. Então a cabeça desaparece
+            completamente e dela só se vêem os olhos.Encontrado em todo Sul da África, o breviceps só está em
+            atividade três meses por ano, de Outono a Dezembro. No resto do tempo, ele dorme profundamente enterrado
+            no solo em uma toca cavada com os esporões que possui nos pés. Durante três meses de atividade, vive em
+            uma toca menos profunda, só saindo para caçar vermes e insetos (principalmente térmitas). Freqüentemente
+            caça, sem sair da toca, apanhando o que passa ao seu alcance. Um pouco antes de começar a chover , 
+            o breviceps fica na entrada de sua toca, entoando um coaxar rápido e repetido, às vezes em coro.
+            O acasalamento e a postura são realizados numa toca alargada. Seu ovo é grande com uma bola de brilhar e
+            dentro dele ocorrem metamorfoses. Ao cabo de dois meses, nasce uma pequena rã de 7 mm de comprimento,
+            já sem cauda e com patas.</b></p>
+
+            <p class="descricao_animal" id="sapo-arlequim"><b><span><a href="../html_descriptions/anfibios/sapo arlequim.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>  Os sapos arlequins vêm em uma paleta impressionante de
+            cores: laranja, verde, dourado, azul, preto, marrom, roxo e até rosa. Por causa de seus impressionantes e 
+            vibrantes combos de cores, eles são às vezes chamados de “sapos-palhaço”<br>Algumas espécies realizam o que 
+            parece ser um “aceno de mão” para se comunicar com outros indivíduos da mesma espécie.Muitas espécies são 
+            difíceis de se ver porque os indivíduos estão escondidos nas florestas. Mas elas são bastante evidentes
+            durante a época de reprodução, quando se reúnem em riachos em busca de potenciais parceiros reprodutivos.<br>
+            Em geral, sapos-arlequim variam em tamanho desde o do polegar de um bebê humano até o de do polegar de um
+            adulto.Casais podem ficar em amplexo (o abraço de acasalamento dos anfibíos) por várias semanas, durante 
+            as quais os machos muitas vezes renunciam à comida em seu compromisso reprodutivo, perdendo até 30% de seu peso corporal!<br>
+            As muitas espécies de sapos-arlequim na América do Sul e Central têm pelo menos uma coisa em comum: 
+            <span>muitas populações sofreram quedas súbitas e catastróficas desde o início dos anos 80</span> como
+            resultado de uma série de ameaças, com uma doença mortal chamada quitridiomicose no topo dessa lista</b></p>
+
+            <p class="descricao_animal" id="sapo-tartaruga"><b><span><a href="../html_descriptions/anfibios/sapo tartaruga.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>, O sapo-tartaruga,
+            o Myobatrachus gouldii,  pertence a uma espécie endêmica da Austrália e assemelha-se a uma pequena tartaruga sem
+            casco. Sua cabeça é pequena, assim como seus olhos, e bastante diferente do restante do corpo. Ao contrário
+            da maioria dos sapos, que locomove-se com o impulso das patas traseiras, M. gouldii utiliza seus braços
+            musculosos para andar em solos arenosos. Eles não precisam de água para reprodução e o acasalamento pode
+            render até 50 ovos.Esta espécie de sapo tem uma forma corporal semelhante a uma pequena tartaruga com sua casca
+            removida. A cabeça é muito pequena, com redução de olhos, e bastante distinta do corpo, ao contrário da
+            maioria dos outros sapos. Pertence a uma espécie endêmica na Austrália.</b></p>
+
+            <p class="descricao_animal" id="sapo-boi-indiano"><b><span><a href="../html_descriptions/anfibios/sapo boi indiano.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> O sapo boi indiano, da espécie Hoplobatrachus
+            tigerinus é encontrado na Ásia, Paquistão, Afeganistão e Nepal. Os machos apara atraírem a atenção da fêmea,
+            ficam com o corpo amarelo e o saco vocal azul e fazem um som bem peculiar na época de acasalamento. Este sapo
+            diferente dos outros não está ameaçado de extinção, mas corre certo perigo devido ao crescimento demográfico 
+            dos países que o sapo indiano vive.<br>O sapo-boi-indiano possui as características típicas de um animal exótico.
+            Não por acaso, ele é originário do sul da Ásia – talvez a região mais exótica do planeta -, um trecho do
+            continente onde estão países como: Madagascar, Myanmar, Afeganistão, Bangladesh, Nepal, Sri-Lanka, Índia,
+            Maldivas, Paquistão, entre outros países.Nesses países, o Hoplobatrachus tigerinus surge como uma espécie
+            quase mítica (especialmente para os turistas) e cercada por lendas que tratam da sua constituição física,
+            propriedades medicinais, hábitos alimentares, entre outras características que não costumam ser observadas
+            em outras espécies da família Ranidae e do gênero Rana.O sapo-boi-indiano, como o seu próprio nome
+            indica, é uma espécie de corpo extremamente avantajado, hábitos noturnos, pele enrugada e resistente,
+            além de ser endêmica dessa região da Ásia . </b></p>
+
+            <p class="descricao_animal" id="Pumpkin-toadlet"><b><span><a href="../html_descriptions/anfibios/pumpkin toadlet.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span>  O Pumpkin Toadlet é um dos menores representantes
+            dos anfíbios, são encontrados apenas no Brasil e internacionalmente conhecidos com o nome Pumpkin toadlet.
+            Sua espécie recebe o nome científico de Brachycephalus ephippium nordoterga e são bastantes venenosos, para
+            se defenderem de seus predadores, já que este animal raramente pula, se movimentando de forma bem lenta.</b></p>
+
+            <p class="descricao_animal" id="salamandra-axolotl"><b><span><a href="../html_descriptions/anfibios/salamandra axolotl.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a> </span> A salamandra axolotl é um anfíbio 
+            endêmico dos canais do lago Xochimilco, localizado no centro da Cidade do México. Embora pertença à família 
+            Ambystomatidae, a metamorfose não ocorre naturalmente nessa espécie, permanecendo em estado larval ao longo
+            de sua vida.No momento, o axolote está em perigo de extinção , devido a uma notável diminuição da
+            população em seu habitat natural. É um animal solitário, que se comunica por sinais visuais ou químicos,
+            quase que exclusivamente durante a estação de acasalamento.<br>é um anfíbio endêmico dos canais do lago
+            Xochimilco, localizado no centro da Cidade do México. Embora pertença à família Ambystomatidae, a metamorfose
+            não ocorre naturalmente nessa espécie, permanecendo em estado larval ao longo de sua vida.No momento, o
+            axolote está em perigo de extinção , devido a uma notável diminuição da população em seu habitat natural.
+            É um animal solitário, que se comunica por sinais visuais ou químicos, quase que exclusivamente durante a 
+            estação de acasalamento.<br>Os seres humanos e outros mamíferos vertebrados são muito limitados em termos de suas
+            habilidades naturais para regenerar algumas partes do corpo que perderam.Por outro lado, o Ambystoma
+            mexicanum não cura suas feridas, regenerando apêndices perdidos ou algumas estruturas vitais, incluindo áreas
+            específicas do cérebro. Há casos em que o axolote, além de reparar o membro lesionado, pode regenerar outro.
+            Este espécime possui uma cauda caracterizada por ser achatada lateralmente. É de grande comprimento, sendo igual a
+            metade do corpo.</b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>

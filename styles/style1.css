@@ -4,24 +4,24 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #645F5F;
-    
+
 }
 
 #header{
     height: 150px;
     padding-top: 10px;
     border: 1px solid black;
-    background-color: white;    
-    position:fixed;  
+    background-color: white;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-#menu-header{    
+#menu-header{
     height: 45px;
     top: 0;
     left: 0;
-    background-color:white;   
+    background-color:white;
     padding-top: 10px;
     padding-left: 3%;
     padding-right: 3%;
@@ -32,28 +32,28 @@ body {
 }
 
 #cabeçalho{
-    padding-top: 0px;    
+    padding-top: 0px;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: x-large;
     font-weight: bolder;
-    font-size:30px;   
+    font-size:30px;
 }
 nav {
     background-color:white;
     overflow: hidden;
     height: 50px;
     width: 100%;
-    
+
   }
-  
+
   .dropdown {
     float: center;
     overflow: hidden;
-    
+
   }
-  
+
   .dropbtn {
     font-size: 14px;
     font-weight: 500;
@@ -61,52 +61,52 @@ nav {
     outline: none;
     color: black;
     padding: 0px 0px;
-    background-color: inherit; 
+    background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
 
-  a{ 
+  a{
     cursor: pointer;
   }
 
-  
+
   .dropbtn:hover{
     text-decoration: underline;
   }
-  
-  .dropdown-content {  
+
+  .dropdown-content {
     position: absolute;
     top: 115px; /* era 115 */
     left: 50%;
     transform: translate(-50%, -50%);
-    right: 50%; 
+    right: 50%;
     box-sizing: border-box;
-    text-align: center;        
+    text-align: center;
     height: auto;
-    display: none;    
-    background-color: transparent; 
-    width: 160px; 
-    line-height: 8%;    
+    display: none;
+    background-color: transparent;
+    width: 160px;
+    line-height: 8%;
     z-index: 10;
     font-weight: 600;
-    
+
   }
-  
+
   .dropdown-content ul {
     list-style-type: none;
     padding: 0;
   }
 
-  
+
   .dropdown-content li {
     padding: 7px 5px 7px 12px;
     font-size: 12px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
   }
-  
+
   .dropdown-content a {
     color: black;
     text-decoration: none;
@@ -116,12 +116,12 @@ nav {
     text-decoration: underline;
     color: red;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-    
+
 #main {
     position: absolute;
     top: 56%;
@@ -130,25 +130,25 @@ nav {
     width: 90%;
     height: 55%;
     background-color: transparent;
-    text-align: center;   
-    display: flex;   
+    text-align: center;
+    display: flex;
     justify-content: space-around;
     margin-bottom: 3%;
 }
 
 #menu-lateral{
-    margin: 0px 30px 0px 0px;  
-    height: 100%;  
-    width: 20%;    
-    background-color: transparent;  
+    margin: 0px 30px 0px 0px;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#menu-lateral li{    
+#menu-lateral li{
     font-weight:600;
     list-style: none;
     text-decoration: none;
@@ -156,96 +156,98 @@ nav {
     text-align: justify;
     line-height: 300%;
     font-size: large;
-    padding-top: 15px; 
-          
+    padding-top: 15px;
+
 }
 
 #menu-lateral li a{
   color: black;
+  text-decoration: none;
+
 }
 
 
 #menu-lateral li a:hover{
-    text-decoration: underline;
-    color: white;     
+    text-decoration: none;
+    color: white;
 }
 
 #span_li_categoria{
   box-shadow: inset 0 0 1em lightgray, 0 0 1em lightblue;
-  color: white;  
+  color: white;
 }
 
 #span_li_categoria_menu{
-  box-shadow: inset 0 0 1em gold, 0 0 1em red; 
-  color: red;  
+  box-shadow: inset 0 0 1em gold, 0 0 1em red;
+  color: red;
 }
 
-#pacote{   
+#pacote{
     margin-left: 5%;
-    width: 75%; 
+    width: 75%;
     height: 100%;
-    display: grid;    
-    grid-template-columns: 33% 33% 33%; 
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 24% 24% 24% 24%;
     grid-row-gap:5px;
-    grid-column-gap: 5px;  
+    grid-column-gap: 5px;
  }
- 
+
  .box img {
      height: 100%;
      width: 100%;
      object-fit: cover;
  }
- 
+
 
 button {
     width: 100%;
     height: 100%;
     background: transparent;
     border: none !important;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-button img:hover{  
+button img:hover{
     border: 1px solid red;
-    box-shadow: inset 0 0 1em gold, 0 0 1em red; 
+    box-shadow: inset 0 0 1em gold, 0 0 1em red;
 }
 
 
 button img:active{  /* aumenta a imagem apenas qdo o mouse ta presionado */
- position: absolute; 
- top: 100px; 
+ position: absolute;
+ top: 100px;
  left: 50%;
  transform: translate(-50%, -50%);
- right: 50%; 
+ right: 50%;
  border: 1px solid red;
- box-shadow: inset 0 0 1em gold, 0 0 1em red;  
+ box-shadow: inset 0 0 1em gold, 0 0 1em red;
 }
 
 
 .btn_menu{
-  position: absolute; 
-  top: 60px; 
+  position: absolute;
+  top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
-  right: 50%; 
+  right: 50%;
 }
 
 
-.btn_menu:hover{ 
-  position: absolute; 
-  top: 60px; 
+.btn_menu:hover{
+  position: absolute;
+  top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
-  right: 50%; 
+  right: 50%;
   box-shadow: none;
   border: none;
 }
 
 
-#descrição{    
-    padding: 4px;    
-    text-align: justify;   
+#descrição{
+    padding: 4px;
+    text-align: justify;
     box-sizing: border-box;
     position: absolute;
     top: 90%;
@@ -256,14 +258,21 @@ button img:active{  /* aumenta a imagem apenas qdo o mouse ta presionado */
     border-radius: 10px;
     background-color: lightgray;
     text-align: justify;
-    padding-top: 10px;    
+    padding-top: 10px;
     overflow-y: scroll;
     max-height: 10%;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .descricao_animal{
     display:none;
+    animation: blink 1s infinite;
 }
 
 span{
@@ -271,21 +280,29 @@ span{
     color: red;
 }
 
-#minha_span{    
+#minha_span{
     box-shadow:none;
     color: black;
 }
 
-#rodape{    
+#minha_span a{
+  text-decoration:underline;
+  color: red;
+  text-decoration: none;
+  animation: blink 1s infinite;
+  box-shadow: inset 0 0 1em transparent, 0 0 1em red;
+}
+
+#rodape{
     height: 28px;
     width: 100%;
     background-color: #645F5F;
     padding-top: 5px;
-    position:fixed; 
+    position:fixed;
     bottom: 0;
      left: 0;
-    right: 0;     
-    line-height: 3px;    
+    right: 0;
+    line-height: 3px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
@@ -300,7 +317,7 @@ span{
     }
 
 
-#menu-lateral li{    
+#menu-lateral li{
     font-weight:600;
     list-style: none;
     text-decoration: none;
@@ -308,21 +325,93 @@ span{
     text-align: justify;
     line-height: 300%;
     font-size: 14px;
-    padding-top: 15px;       
-}
-    
+    padding-top: 15px;
 }
 
+}
+
+/* @media screen and (min-width: 768px) {
+  .dropdown-content {
+    position: absolute;
+    right: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 150vh;
+     background-color: red; 
+
+  }
+
+  .dropdown-content ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 45%;
+  }
+
+  .dropdown-content li {
+    margin-right: 50%;
+    max-width: 200px;
+     background-color: green; 
+    bottom: 10px;
+  }
+} */
+
+@media screen and (min-width: 768px) {
+  .dropdown-content {
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 950px;
+    width: 100%;
+  }
+
+  .dropdown-content ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .dropdown-content li {
+    margin: 0 12px;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px;    
+  }
+
+  .btn_menu{
+    display: none;
+  }
+}
 
 
 
 
 
-   
-    
-    
-      
-      
-    
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
