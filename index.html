@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>MAMIFEROS</title>
+
+    <script>
+        function MostraTextoAnimal( nome_animal){
+            var animal = document.getElementById(nome_animal).innerHTML;
+            document.querySelector('#minha_span').innerHTML = animal;
+        }
+   
+    window.addEventListener('DOMContentLoaded', function() {
+        var imagens = document.getElementsByClassName('box');
+        for (var i = 0; i < imagens.length; i++) {
+           imagens[i].addEventListener('mouseover', function() {
+           this.setAttribute('title', " CLIQUE E SEGURE");
+        });
+        imagens[i].addEventListener('mouseout', function() {
+          this.removeAttribute('title');
+        });
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        var imagens = document.getElementsByClassName('descricao_animal');
+        for (var i = 0; i < imagens.length; i++) {
+           imagens[i].addEventListener('mouseover', function() {
+           this.setAttribute('title', " CLIQUE E SAIBA MAIS");
+        });
+        imagens[i].addEventListener('mouseout', function() {
+          this.removeAttribute('title');
+        });
+      }
+    });
+   
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div id="cabeçalho">
+            MUNDO ANIMAL
+        </div>
+    
+        <nav>
+            <div class="dropdown">
+            <button type="button" class="dropbtn"><a href="javascript:void(0);" class="icon" >
+                <!-- <i class="bi bi-list"></i> -->
+                <img class="btn_menu" src="../img/menu_list_options_basic_icon_192477 (1).png" alt="">
+            </a></button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./pets.html">PETS</a></li>
+                    <li><a href="./selvagem.html">SELVAGENS</a></li>                    
+                    <li><a href="./em_extincao.html">EM EXTINÇÃO </a></li>
+                    <li><a href="./extintos.html">EXTINTOS</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div><!--FECHA HEADER-->
+    <div id="main">
+    <div id="menu-lateral">
+        <ul>
+            <li ><a href="../html/aves.html">AVES</a></li>
+            <li><a href="../html/repteis.html">REPTEIS</a></li>
+            <li><a href="#"><span id="span_li_categoria">MAMIFEROS</span> </a></li>
+            <li><a href="../html/peixes.html">PEIXES</a></li>
+            <li><a href="../html/anfibios.html">ANFÍBIOS</a></li>
+        </ul>
+    </div>
+    <div id="pacote">
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('coelho')"><img src="./img/mamiferos/coelho.jpg" alt="coelho"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('elefante')"><img src="./img/mamiferos/elefante comendo grama.jpg" alt="elefante"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('gato')"><img src="./img/mamiferos/gato.jpg" alt="gato"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('girafa')"><img src="./img/mamiferos/girafas.jpg" alt="girafa"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('leao')"><img src="./img/mamiferos/leão.jpg" alt="leão"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('macaco')"><img src="./img/mamiferos/macaco.jpg" alt="macaco"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('morcego')"><img src="./img/mamiferos/MORCEGO.webp" alt="morcego"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('ornitorrinco')"><img src="./img/mamiferos/ornitorrinco.jpg" alt="ornitorrinco"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('cachorro')"><img src="./img/mamiferos/cachorro.jpg" alt="cachorro"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('coala')"><img src="./img/mamiferos/coala.jpg" alt="coala"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('golfinho')"><img src="./img/mamiferos/golfinho.jpg" alt="golfinho"></button></div>
+       <div class="box"><button type="button" onclick="MostraTextoAnimal('porco')"><img src="./img/mamiferos/porco.jpg" alt="porco"></button></div>
+   </div><!--fecha pacote-->
+  </div><!--fecha main-->
+  <div id="descrição">
+        <span id="minha_span"></span>
+            <p class="descricao_animal" id="coelho"><b><span><a href="./html_descriptions/mamiferos/coelho.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                O coelho é um mamífero cujo corpo é coberto por uma pelagem
+                 densa e parecida com lã. Sua
+                cabeça é ovalada e seus olhos grandes. <br>
+                Seu peso varia entre 1,5 e 2,5 kg, suas orelhas podem medir até 7 cm e sua cauda é bem curta.
+                As patas posteriores são maiores do que as anteriores.
+                O comprimento do coelho oscila entre 33 e 50 cm.</b></p>
+
+            <p class="descricao_animal" id="elefante"><b><span><a href="./html_descriptions/mamiferos/elefante.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                Elefantes são animais mamíferos encontrados na Ásia e África,
+                que se destacam pelo seu grande porte, sendo considerados os maiores vertebrados terrestres
+                 existentes no mundo na atualidade. Algumas características que chamam a atenção são suas longas
+                 presas e uma tromba comprida. A tromba do elefante é utilizada para manipular objetos,
+                 comunicar-se, levar água e comida até a boca, respirar e cheirar.</b></p>
+
+            <p class="descricao_animal" id="gato"><b> <span> <a href="./html_descriptions/mamiferos/gato.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  
+                O gato (felis catus) é um mamífero carnívoro e quadrúpede pertencente
+                à família Felidae e à ordem carnívora.<br> É um animal doméstico apreciado por caçar ratos e ratazanas.<br>
+                Este animal possui unhas retráteis, ouvidos e olfação bem aguçados, uma notável visão noturna e um corpo flexível,
+                musculoso e compacto.<br> Trata-se de um animal com boa memória e com capacidade de aprender por meio da
+                observação e da experiência.<br> Existem aproximadamente 70 espécies de gatos conhecidas. As maiores diferenças
+                são o comprimento da cauda e o aspecto geral, visto que variam menos do que as raças de cães.<br>
+                As raças menores variam de 2 a 3 kg e as maiores de 7 a 9 kg. Até hoje, as tentativas de criar raças
+                muito pequenas ou muito grandes fracassaram.</b></p>
+
+                <p class="descricao_animal" id="girafa"><b><span><a href="./html_descriptions/mamiferos/girafa.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                Girafas são mamíferos nativos do continente africano.<br>
+                Algumas das características mais marcantes desses animais é a sua altura e o seu padrão de coloração, com manchas marrons características.<br>
+                São animais herbívoros (só se alimentam de vegetais) que apresentam como um de seus alimentos preferidos as plantas conhecidas como acácias.<br>
+                Geralmente as fêmeas dão à luz um único filhote.<br>
+
+                As girafas são animais grandes, possuindo um tamanho de cerca de 5,7 m de altura, e os machos são maiores que as fêmeas.<br>
+                O peso desses mamíferos varia entre 1180 kg e 1930 kg.<br> As girafas apresentam pernas longas, sendo as pernas dianteiras mais longas que as traseiras,
+                e também um pescoço bastante comprido.<br> Possuem uma cauda que pode apresentar cerca de 100 cm de comprimento.
+                Os olhos desse animal são grandes e sua língua pode chegar a aproximadamente 45 cm de comprimento, sendo essa
+                uma característica importante na captura do alimento.</b></p>
+                
+                <p class="descricao_animal" id="leao"><b><span><a href="./html_descriptions/mamiferos/leão.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  
+                O leão é um animal mamífero felino, vertebrado e carnívoro de grande porte,
+                cujo nome científico é Panthera leo.<br>Conhecido como o Rei da Selva, o leão pode ser encontrado na Ásia, África e Europa.<br>
+                O macho possui uma juba característica e imponente, além de ser bastante peludo. Já a fêmea é de menor porte,
+                bem menos peluda e não apresenta a juba. A coloração da pelagem dos leões varia de amarelo a marrom.<br>
+                Eles vivem em grupos de até 40 indivíduos, sendo em sua maioria fêmeas, lideradas pelo macho alfa.<br>
+                As atividades no grupo são divididas entre os seus integrantes.
+                Enquanto as fêmeas são responsáveis pela caça e cuidam dos filhotes, os machos garantem a proteção do grupo.<br>
+                A maior parte do tempo dos leões é destinada ao descanso, apenas durante 5 horas do dia ocorrem as atividades
+                 de caça e em grupo. O restante do tempo serve para dormir, descansar e economizar energia.
+                Além disso, as suas atividades costumam acontecer ao entardecer.<br>
+                Os leões possuem excelente visão noturna, garantindo que a caça possa ocorrer durante a noite.</b></p>
+
+                <p class="descricao_animal" id="macaco"><b><span><a href="./html_descriptions/mamiferos/macaco.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                Macaco é um termo utilizado para referir-se a algumas espécies de primatas.
+                 Nem todos os primatas são macacos, mas todos os macacos são primatas.<br>
+                Macacos são animais mamíferos, portanto, dentre suas principais características, podemos destacar a presença
+                de pelos em seu corpo e de glândulas mamárias, as quais produzem leite, utilizado na alimentação dos filhotes.<br>
+                Os pelos dos macacos apresentam diferentes tonalidades a depender da espécie estudada.<br>
+                Dentre as principais características dos primatas, podemos destacar o cérebro bem desenvolvido, os olhos
+                voltados para a frente, e o chamado polegar opositor. O polegar opositor nos macacos é importante
+                para que consigam agarrar objetos, funcionando como verdadeiras pinças.<br></b></p>
+
+                <p class="descricao_animal" id="morcego"><b><span><a href="./html_descriptions/mamiferos/morcego.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                 Os morcegos pertencem à ordem Chiroptera da classe dos Mamíferos.
+                São animais que as mãos sofreram modificações e se especializaram para o voo, como asas.<br>
+                Representam um quarto das espécies de mamíferos do mundo, chegando a mais de 1100 espécies descritas.<br>
+                Existem duas subordens:
+                Megachiroptera: São os maiores morcegos, que conhecemos como Raposas voadoras.
+                 Encontradas na África, Oceania e Ásia. Podem pesar mais de 1,5 kg e possuir uma envergadura de até 2 metros.
+                  A maior espécie conhecida é a Pteropus vampyrus, da Indonésia. As raposas voadoras se alimentam de frutas.
+                Microchiroptera: São os morcegos que pesam de 2 a 200 gramas, podendo ter uma envergadura
+                 de 1 metro, sendo a maior espécie a <i><u>Vampyrum spectrum</u></i> e a menor a <i><u>Craseonycteris thonglongyai</u></i>.<br>
+                 Esta subordem tem uma dieta diversa: folhas, frutos, sementes, insetos, néctar, pequenos vertebrados e sangue. São animais muito importantes para o equilíbrio dos ecossistemas terrestres.<br>
+                 <u>Dentre mais de 1200 espécies, apenas três são hematófagas</u> e se restringem à América do Sul, sendo que uma delas ataca apenas aves. </b></p>
+
+                 <p class="descricao_animal" id="ornitorrinco"><b><span><a href="./html_descriptions/mamiferos/ornitorrinco.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                O ornitorrinco é um mamífero semiaquático que põe ovos, apresenta um bico semelhante ao do pato, e é encontrado exclusivamente na Austrália.
+                O ornitorrinco é um animal extremamente exótico que apresenta características que lembram as de aves e répteis,
+                uma vez que possui bico e é capaz de botar ovos.<br>
+                É um animal encontrado apenas na Austrália e que apresenta hábito de vida semiaquático, sendo observado
+                exclusivamente em ambientes de água doce.<br>
+                O ornitorrinco é um animal carnívoro que se alimenta de pequenos animais, como insetos e camarões.<br>
+                <u><i>Os machos são capazes de produzir veneno</i></u>, sendo essa substância utilizada para a defesa do território no período reprodutivo.
+                O ornitorrinco possui um corpo alongado repleto de pelos que apresentam coloração marrom. Sua cauda é larga e
+                achatada, o que lembra muito a cauda dos castores. Na região localizada acima do bico, pode-se observar
+                a presença de duas narinas. Os olhos e orelhas se situam lateralmente na cabeça.<br>
+                Por ficar um longo tempo dentro da água, é considerado um mamífero semiaquático.
+                Suas patas semelhantes às de patos favorecem a sua natação. Além disso, possui algumas dobras de peles que
+                cobrem ouvidos e olhos, bem como tem uma estrutura que evita a entrada de água nas narinas no momento
+                em que está dando um mergulho. </b></p>
+
+                <p class="descricao_animal" id="cachorro"><b><span><a href="./html_descriptions/mamiferos/cachorro.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                O cachorro doméstico é provavelmente o animal de estimação mais popular do mundo.<br>
+                O cachorro é um mamífero quadrúpede (ou seja, anda sobre quatro patas) que se destaca por ter uma cauda e uma
+                cobertura de pelos por todo o seu corpo. Entretanto, hoje em dia, graças às diversas raças caninas existentes,
+                encontramos cães de todos os tamanhos, formas e cores.<br> Por exemplo, em termos de dimensões, <u><i>o menor cão,
+                o Chihuahua, mede entre 15 e 25 cm de altura</i></u> até a cernelha (ponto mais alto do ombro de um cachorro),
+                enquanto <u><i>a maior raça de cachorro do mundo, o Dogue Alemão, tem uma altura mínima de 80 cm até a cernelha.</i></u>
+                A morfologia também é muito variável entre as características de um cachorro. Assim, encontramos cães com um
+                focinho muito longo e outros com um focinho plano, os chamados cães braquicefálicos. Outro aspecto muito
+                significativo da espécie é a cauda, que pode ser longa ou curta, na verdade, há até mesmo raças que nascem
+                sem ela. A cauda é composta por um número variável de vértebras, e pode ter mais ou menos pêlos. As orelhas,
+                dotadas de 18 músculos, são muito flexíveis e expressivas. Também não podemos deixar de falar da pelagem,
+                que pode ser de todos os tipos de cores e padrões, bem como macia, áspera ou até dupla.</b></p>
+
+                <p class="descricao_animal" id="coala"><b><span><a href="./html_descriptions/mamiferos/coala.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span> 
+                Coalas são animais australianos, pertencentes ao grupo dos
+                mamíferos marsupiais, isto é, possuem uma bolsa ventral, chamada de bolsa marsupial ou marsúpio, para o
+                desenvolvimento dos filhotes que nascem prematuros, assim como acontece com os cangurus da mesma região e os
+                gambás que podem ser vistos no Brasil.<br> Na Austrália, os coalas podem ser encontrados na região de florestas
+                a nordeste e sudeste do país.<br>
+                Os coalas são animais lentos que raramente descem das árvores e bebem pouca água, recorrendo ao líquido apenas
+                em caso de doenças ou extrema desidratação devido ao calor. Geralmente, conseguem todo o líquido que necessitam
+                através da alimentação que consiste basicamente em folhas de algumas espécies de eucalipto.<br>
+                As principais características desse animal são: a cabeça grande, o focinho curto e os olhos bem separados.
+                O nariz achatado com as narinas em forma de V tem papel importante no equilíbrio térmico do corpo.
+                O pelo do animal é denso e macio desempenhando importante função na proteção contra os fatores
+                meteorológicos e regulação térmica. Como eles não constroem abrigos, ficam constantemente expostos a chuvas
+                e o Sol. A pelagem no dorso dos coalas é bastante densa e ficam mais escurecidas durante o inverno para
+                captar mais o calor do Sol e durante o verão tornam-se mais escassas para não aquecer o corpo do animal.</b></p>
+
+                <p class="descricao_animal" id="golfinho"><b><span><a href="./html_descriptions/mamiferos/golfinho.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  
+                Golfinhos são mamíferos aquáticos da ordem Cetacea (mesma das baleias) e da família Delphinidae.<br> Esta é a maior família da ordem, com 37 espécies conhecidas,
+                vivendo perfeitamente adaptadas às águas. Estão presentes em todos os oceanos e em algumas águas de rios.
+                Podem atingir 40 km/h em seu nado e saltar até 5 metros para fora da água, pois são acrobatas. São animais
+                sociáveis, que vivem em grupos, podendo interagir com outras espécies, por exemplo, com humanos.<br>
+                Possuem dentes (são da subordem Odontocetes), alimentando-se principalmente de lulas e peixes. O tamanho
+                das espécies varia de 1,5 metros a 10 metros e pesam entre 50 kg e 7000 kg. Têm uma testa achatada e uma
+                estrutura longa e fina parecendo um bico, mas o formato da cabeça muda entre as espécies, algumas parecem
+                mais quadradas.Na testa há internamente um depósito de gordura chamado de “melão”. Muitas
+                espécies possuem barbatanas dorsais.<br> Vivem de 25 a 30 anos, dão à luz um filhote por estação
+                reprodutiva e os machos são normalmente maiores que as fêmeas. Acredita-se que o sexo dos golfinhos,
+                assim como dos humanos, não é apenas para reprodução, mas por prazer também.<br>
+                <u><i>Respiram por pulmões</i></u> e quando dormem apenas um hemisfério cerebral descansa, o outro continua ativo
+                para não se afogarem, cuidando da respiração.</b></p>
+                
+                <p class="descricao_animal" id="porco"><b><span><a href="./html_descriptions/mamiferos/porco.html" title="CLIQUE E SAIBA MAIS">CLIQUE E SAIBA MAIS</a></span>  
+                O porco é um animal mamífero com quatro patas, sendo que cada uma delas possui dois cascos e duas unhas (todos funcionais). 
+                As unhas são utilizadas para coçar e fincar a firmeza dos recuos, os cascos para andar e cavar.<br>
+                Possui um focinho cartilaginoso e 44 dentes em sua boca. O focinho é o órgão sensorial mais sensível do porco,
+                é com ele que sente o cheiro, a textura, a temperatura, etc. Nascem com 28 dentes e na fase adulta possuem
+                44.<br> A contrário do que muitos acreditam, os porcos não possuem glândulas sudoríferas ou se sim,
+                são mínimas, portanto não conseguem suar e se não suam não fedem. Não existe nenhuma glândula que segregue
+                mau cheiro em um porco.<br>A pele do porco é coberta com cerdas (pelos grossos) e revestida por
+                uma espessa camada de gordura.<br>O porco é omnívoro, come tudo desde vegetais a minhocas,
+                insectos etc. Os porcos machos tem presas no maxilar superior que são constantemente afiadas através do contato
+                com as presas inferiores aquando da mastigação. As fêmeas não têm presas superiores ou se têm dão mínimas não
+                crescendo como as dos machos.</b></p>
+    </div><!--fecha descrição-->
+    <div id="rodape"><p>desenvolvido por Maikel Jefferson Martins Iani</p></div>
+</body>
+</html>
